@@ -1,0 +1,2977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shikhar Shukla | Clinical & Healthcare AI Professional | Ex-CDC Fellow</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Healthcare & AI Professional | Ex-CDC | Dentist + Data Scientist. Experienced in health informatics, multimodal AI, and biomedical data science with 10+ years spanning clinical practice, public health, and advanced machine learning research." />
+  <meta name="keywords" content="Healthcare AI, Health Informatics, Data Scientist, Dentist, Ex-CDC, Biomedical Data Science, Clinical Forecasting, Public Health Data, Multimodal AI, Machine Learning, Deep Learning, EHR Analytics, Medical Imaging, Voice AI, Physiologic Signals, Time-Series Modeling, Sepsis Prediction, Wound Forecasting, Parkinson’s Voice Classification" />
+  <meta name="author" content="Shikhar Shukla" />
+  <meta property="og:title" content="Shikhar Shukla - Healthcare Machine Learning & Analytics Portfolio" />
+  <meta property="og:description" content="Healthcare & AI Professional | Multimodal Data · Informatics" />
+  <meta property="og:type" content="website" />
+
+  <!-- Performance: preconnect + font-display swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+/* ================= CSS Variables (Enhanced) ================= */
+:root{
+  /* Colors */
+  --primary-purple:#7c3aed;--primary-blue:#3b82f6;--accent-purple:#8b5cf6;--accent-blue:#60a5fa;
+  /* Backgrounds */
+  --bg-primary:#ffffff;--bg-secondary:#f8fafc;--bg-card:rgba(255,255,255,.95);--bg-card-hover:rgba(248,250,252,.98);
+  /* Text */
+  --text-primary:#1e293b;--text-secondary:#475569;--text-muted:#64748b;
+  /* Borders */
+  --border-color:rgba(226,232,240,.8);--border-hover:rgba(124,58,237,.3);
+  /* Navigation */
+  --nav-bg:rgba(255,255,255,.95);--nav-border:rgba(226,232,240,.6);--nav-height:72px;
+  /* Gradients */
+  --gradient-card:linear-gradient(135deg,rgba(76,29,149,.03) 0%,rgba(30,64,175,.03) 100%);
+  --gradient-primary:linear-gradient(135deg,#7036c6 0%,#2550dd 100%);
+  --gradient-secondary:linear-gradient(135deg,#9460ee 0%,#2563eb 100%);
+  --gradient-text:linear-gradient(135deg,#4c1d95 0%,#1e40af 50%,#8746ef 100%);
+  /* Shadows */
+  --shadow-sm:0 2px 8px rgba(0,0,0,.04);--shadow-md:0 8px 24px rgba(0,0,0,.06);--shadow-lg:0 20px 40px rgba(0,0,0,.08);--shadow-glow:0 0 30px rgba(124,58,237,.3);
+  /* Layout & Typography */
+  --radius:12px;--radius-lg:20px;
+  --transition-fast:200ms cubic-bezier(.4,0,.2,1);--transition-base:300ms cubic-bezier(.4,0,.2,1);--transition-slow:500ms cubic-bezier(.4,0,.2,1);
+  /* Font scale */
+  --font-size-xs:.75rem;--font-size-sm:.85rem;--font-size-base:.95rem;--font-size-md:1rem;--font-size-lg:1.1rem;
+  --font-size-xl:1.25rem;--font-size-2xl:1.5rem;--font-size-3xl:2rem;--font-size-4xl:2.5rem;--font-size-5xl:3rem;--font-size-6xl:4rem;
+  /* Spacing */
+  --space-xs:.5rem;--space-sm:.75rem;--space-md:1rem;--space-lg:1.5rem;--space-xl:2rem;--space-2xl:3rem;--space-3xl:4rem;--space-4xl:6rem;
+}
+/* Dark theme variables */
+[data-theme="dark"]{
+  --bg-primary:#0f0f1a;--bg-secondary:#1a1a2e;--bg-card:rgba(26,26,46,.6);--bg-card-hover:rgba(26,26,46,.8);
+  --text-primary:#f8f9ff;--text-secondary:#c3c8e3;--text-muted:#8b92b9;
+  --border-color:rgba(167,139,250,.1);--border-hover:rgba(167,139,250,.3);
+  --nav-bg:rgba(15,15,26,.8);--nav-border:rgba(167,139,250,.1);
+  --gradient-card:linear-gradient(135deg,rgba(124,58,237,.1) 0%,rgba(59,130,246,.1) 100%);
+  --shadow-sm:0 2px 8px rgba(124,58,237,.1);--shadow-md:0 8px 24px rgba(124,58,237,.15);--shadow-lg:0 20px 40px rgba(124,58,237,.2);
+}
+
+/* ================= Base Styles (Enhanced) ================= */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:var(--nav-height);font-size:16px}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:var(--font-size-base);line-height:1.6;color:var(--text-primary);background:var(--bg-primary);
+  transition:background-color var(--transition-base),color var(--transition-base);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+}
+img{max-width:100%;height:auto;display:block}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+/* ================= Layout Components ================= */
+.container{max-width:1200px;margin:0 auto;padding:0 var(--space-xl)}
+@media(max-width:768px){.container{padding:0 var(--space-md)}}
+
+/* ================= Background ================= */
+.bg-canvas{
+  position:fixed;inset:0;z-index:-2;background:var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 20% 50%,rgba(124,58,237,.08),transparent 50%),
+    radial-gradient(circle at 80% 20%,rgba(59,130,246,.08),transparent 50%),
+    radial-gradient(circle at 40% 80%,rgba(139,92,246,.05),transparent 50%);
+}
+
+/* ================= Skip Link ================= */
+.skip-link{
+  position:absolute;top:-40px;left:6px;background:var(--primary-purple);color:#fff;
+  padding:var(--space-xs) var(--space-md);text-decoration:none;border-radius:4px;z-index:1000;
+  transition:top .2s;font-size:var(--font-size-sm);font-weight:600;
+}
+.skip-link:focus{top:6px}
+
+/* ================= Navigation (Enhanced) ================= */
+.navbar{
+  position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.1);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,.1);z-index:1000;transition:all var(--transition-base);
+}
+.navbar.scrolled{background:var(--nav-bg);border-bottom-color:var(--nav-border);box-shadow:var(--shadow-md)}
+.nav-content{display:flex;align-items:center;justify-content:space-between;height:var(--nav-height);max-width:1400px;margin:0 auto;padding:0 var(--space-xl)}
+.logo{display:flex;align-items:center;gap:var(--space-sm);font-weight:700;font-size:var(--font-size-xl);color:var(--text-primary);font-family:'Manrope',sans-serif;text-decoration:none;line-height:1.2}
+.logo-icon{width:40px;height:40px;background:var(--gradient-primary);border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:var(--font-size-sm);transition:transform var(--transition-base),box-shadow var(--transition-base)}
+.logo:hover .logo-icon{transform:rotate(360deg) scale(1.1);box-shadow:var(--shadow-glow)}
+.nav-links{display:flex;list-style:none;gap:var(--space-xl);align-items:center}
+.nav-links a{
+  color:var(--text-secondary);text-decoration:none;font-weight:500;font-size:var(--font-size-base);
+  position:relative;transition:all var(--transition-base);padding:var(--space-xs) var(--space-md);border-radius:8px;line-height:1.4;
+}
+.nav-links a::before{content:'';position:absolute;inset:0;background:var(--gradient-primary);opacity:0;border-radius:8px;transition:opacity var(--transition-base);z-index:-1}
+.nav-links a:hover::before,.nav-links a.active::before{opacity:.1}
+.nav-links a:hover,.nav-links a.active{color:var(--primary-purple);transform:translateY(-2px)}
+.menu-toggle{display:none;background:none;border:0;color:var(--text-primary);cursor:pointer;padding:var(--space-xs);border-radius:8px;transition:background-color var(--transition-fast)}
+.menu-toggle:hover{background:var(--bg-secondary)}
+.theme-toggle{
+  background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:25px;width:50px;height:28px;
+  position:relative;cursor:pointer;transition:all var(--transition-base);margin-left:var(--space-md);
+}
+.theme-toggle-slider{
+  position:absolute;top:3px;left:3px;width:22px;height:22px;background:#fff;border-radius:50%;
+  display:grid;place-items:center;font-size:11px;transition:all var(--transition-base);
+}
+[data-theme="dark"] .theme-toggle{background:var(--primary-purple);border-color:var(--primary-purple)}
+[data-theme="dark"] .theme-toggle-slider{transform:translateX(22px)}
+@media(max-width:900px){
+  .nav-content{padding:0 var(--space-lg)}
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(20px);
+    border-top:1px solid var(--border-color);flex-direction:column;padding:var(--space-md) var(--space-xl);
+    gap:var(--space-md);visibility:hidden;opacity:0;transform:translateY(-10px);transition:all var(--transition-base)
+  }
+  .nav-links.active{visibility:visible;opacity:1;transform:translateY(0)}
+  .menu-toggle{display:block}
+  .nav-links a{padding:var(--space-sm) var(--space-md);font-size:var(--font-size-md);width:100%;text-align:center;border-radius:var(--radius)}
+  .theme-toggle{margin-left:var(--space-xs)}
+}
+
+/* ================= Typography (Enhanced) ================= */
+h1,h2,h3,h4,h5,h6{font-family:'Manrope',sans-serif;font-weight:700;line-height:1.2;letter-spacing:-.025em;margin:0}
+h1{font-size:var(--font-size-6xl);font-weight:500}
+h2{font-size:var(--font-size-5xl)}
+h3{font-size:var(--font-size-2xl)}
+h4{font-size:var(--font-size-xl)}
+h5{font-size:var(--font-size-lg)}
+h6{font-size:var(--font-size-md)}
+
+/* ================= Buttons (Enhanced) ================= */
+.btn{
+  display:inline-flex;align-items:center;gap:var(--space-xs);padding:14px 28px;border-radius:var(--radius);
+  font-weight:600;font-size:var(--font-size-base);text-decoration:none;border:0;cursor:pointer;
+  transition:all var(--transition-base);position:relative;overflow:hidden;font-family:inherit;line-height:1.4;
+}
+.btn::before{
+  content:'';position:absolute;inset:50% auto auto 50%;width:0;height:0;background:rgba(255,255,255,.2);
+  border-radius:50%;transform:translate(-50%,-50%);transition:all .5s;pointer-events:none;
+}
+.btn:hover::before{width:300px;height:300px}
+.btn svg{width:18px;height:18px;transition:transform var(--transition-base);flex-shrink:0}
+.btn:hover svg{transform:translateX(4px)}
+.btn-primary{background:var(--gradient-primary);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.btn-secondary{background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border-color)}
+.btn-secondary:hover{background:var(--bg-card-hover);border-color:var(--border-hover);transform:translateY(-2px)}
+
+/* ================= Cards (Enhanced) ================= */
+.card{
+  background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);
+  padding:var(--space-xl);transition:all var(--transition-base);position:relative;overflow:hidden;
+}
+.card::before{content:'';position:absolute;inset:0;background:var(--gradient-card);opacity:0;transition:opacity var(--transition-base);pointer-events:none}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--border-hover)}
+.card:hover::before{opacity:1}
+
+/* ================= Sections (Enhanced) ================= */
+section{padding:var(--space-4xl) 0;position:relative}
+.section-header{text-align:center;margin-bottom:var(--space-3xl)}
+.section-label{
+  display:inline-block;background:var(--gradient-primary);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  font-weight:600;font-size:var(--font-size-sm);text-transform:uppercase;letter-spacing:2px;margin-bottom:var(--space-md);position:relative;
+}
+.section-label::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:50px;height:2px;background:var(--gradient-primary)}
+.section-title{
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:var(--font-size-5xl);margin-bottom:var(--space-md);
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;
+}
+.section-subtitle{font-size:var(--font-size-lg);color:var(--text-secondary);max-width:700px;margin:0 auto;line-height:1.6}
+@media(max-width:768px){
+  section{padding:var(--space-3xl) 0}
+  .section-title{font-size:var(--font-size-4xl)}
+  .section-header{margin-bottom:var(--space-2xl)}
+}
+
+/* ================= Hero Section (Enhanced) ================= */
+.hero{min-height:100vh;display:flex;align-items:center;text-align:center;padding-top:var(--nav-height);position:relative;z-index:1}
+.hero-content{width:100%}
+.hero-image{
+  width:180px;height:180px;margin:0 auto var(--space-xl);border-radius:50%;overflow:hidden;border:2px solid var(--border-color);
+  box-shadow:var(--shadow-md);transition:all var(--transition-base);
+}
+.hero-image:hover{transform:scale(1.02);border-color:var(--primary-purple);box-shadow:var(--shadow-glow)}
+.hero-image img{width:100%;height:100%;object-fit:cover}
+.hero-badge{display:inline-block;background:var(--gradient-secondary);opacity:.8;color:#fff;padding:10px 20px;border-radius:25px;font-size:var(--font-size-sm);font-weight:600;margin-bottom:var(--space-xl)}
+.hero-title{
+  font-family:'Inter',sans-serif;font-weight:500;font-size:var(--font-size-6xl);margin-bottom:var(--space-md);letter-spacing:-.02em;
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;
+}
+.hero-subtitle{font-size:var(--font-size-2xl);color:var(--text-secondary);margin-bottom:var(--space-md);font-weight:600;line-height:1.3}
+.hero-description{font-size:var(--font-size-lg);color:var(--text-secondary);max-width:760px;margin:0 auto calc(var(--space-xl) + var(--space-xs));line-height:1.7}
+.hero-cta{display:flex;gap:var(--space-md);justify-content:center;margin-bottom:var(--space-2xl);flex-wrap:wrap}
+@media(max-width:768px){
+  .hero-title{font-size:var(--font-size-5xl)}
+  .hero-subtitle{font-size:var(--font-size-xl)}
+  .hero-cta{flex-direction:column;align-items:center;gap:var(--space-sm)}
+  .hero-cta .btn{width:100%;max-width:280px}
+}
+@media(max-width:480px){
+  .hero-title{font-size:var(--font-size-4xl)}
+  .hero-subtitle{font-size:var(--font-size-lg)}
+}
+
+/* ================= Stats Bar (Enhanced) ================= */
+.stats-bar{display:flex;justify-content:center;gap:var(--space-2xl);flex-wrap:wrap;margin-top:var(--space-md)}
+.stat-item{text-align:center;min-width:140px}
+.stat-number{
+  font-size:var(--font-size-4xl);font-weight:700;background:var(--gradient-primary);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;display:block;position:relative;line-height:1.1;
+}
+.stat-number::after{content:'';position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);width:30px;height:3px;background:var(--gradient-primary);border-radius:2px}
+.stat-label{font-size:var(--font-size-base);color:var(--text-muted);font-weight:500;margin-top:var(--space-xs);font-family:'Source Code Pro',monospace;line-height:1.4}
+/* Add spacing between stats and honors */
+.stats-bar {
+  margin-bottom: var(--space-2xl); /* pushes honors down */
+}
+
+.honors-bar {
+  margin-top: var(--space-xl); /* ensures gap is consistent */
+}
+/* ================= Honors Bar (Visible Grid, High Contrast) ================= */
+.honors-bar{
+  margin-top:0; /* fuse with stats bar */
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 0;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Show ALL honors at once: grid, no horizontal scroll */
+.honors-track{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 16px 20px;
+  overflow: visible;          /* kill the scroll bar */
+}
+
+/* Pill cards with high-contrast light background */
+.honor-card{
+  display:flex; align-items:flex-start; gap:12px;
+  background: var(--bg-card);                 /* light in light mode */
+  border:1px solid var(--border-color);
+  border-radius: 16px;                        /* modern rounded, not too pill-y */
+  padding:14px 16px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+.honor-card:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-hover);
+}
+
+/* Ensure dark theme stays readable */
+@media (prefers-color-scheme: dark){
+  .honor-card{ background: var(--bg-card); }  /* uses your dark var already */
+}
+
+.honor-icon{
+  font-size:22px; line-height:1;
+  filter: drop-shadow(0 4px 10px rgba(124,58,237,.25));
+  animation: honorPulse 2.4s ease-in-out infinite;
+  margin-top:2px;
+}
+@keyframes honorPulse{
+  0%,100%{ transform: scale(1); opacity:1 }
+  50%{ transform: scale(1.08); opacity:.9 }
+}
+
+/* Typography aligned to stats bar style */
+.honor-body h4{
+  margin:0 0 4px;
+  font-size: var(--font-size-base);
+  font-weight: 800;
+  line-height:1.25;
+  background: var(--gradient-text);               /* gradient like stats */
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.honor-body p{
+  margin:0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);                   /* readable subtitle */
+  line-height:1.35;
+}
+
+
+/* ================= About Section (Enhanced) ================= */
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-xl);align-items:stretch}
+.about-card{display:flex;flex-direction:column;text-align:center}
+.skill-category-icon{font-size:var(--font-size-4xl);opacity:.85;margin-bottom:var(--space-md);display:block;line-height:1}
+.about-card h3{margin-bottom:var(--space-md);font-size:var(--font-size-xl);color:var(--text-primary)}
+.about-card p{color:var(--text-secondary);line-height:1.6;flex-grow:1;font-size:var(--font-size-base)}
+
+/* ================= Projects Section (Enhanced) ================= */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:var(--space-xl);margin-bottom:var(--space-xl)}
+.project-card{
+  background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);overflow:hidden;
+  display:flex;flex-direction:column;transition:all var(--transition-base);
+}
+.project-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--border-hover)}
+.project-header{padding:calc(var(--space-md) + var(--space-xs)) var(--space-lg);border-bottom:1px solid var(--border-color);position:relative}
+.project-badge{
+  position:absolute;top:var(--space-md);right:var(--space-lg);background:var(--gradient-primary);color:#fff;
+  padding:4px var(--space-sm);border-radius:var(--space-sm);font-size:var(--font-size-xs);font-weight:700;line-height:1.2;
+}
+.project-title{font-size:var(--font-size-xl);margin-bottom:4px;color:var(--text-primary);font-weight:600;line-height:1.3}
+.project-type{font-size:var(--font-size-sm);color:var(--text-muted);font-weight:500;line-height:1.4}
+.project-content{padding:calc(var(--space-md) + var(--space-xs)) var(--space-lg);display:flex;flex-direction:column;gap:var(--space-md);flex-grow:1}
+.project-description{color:var(--text-secondary);line-height:1.6;flex-grow:1;font-size:var(--font-size-base)}
+.project-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:var(--space-md);padding:var(--space-md);background:var(--bg-secondary);border-radius:var(--radius)}
+.metric-item{text-align:center}
+.metric-value{display:block;font-weight:700;font-size:var(--font-size-lg);color:var(--primary-purple);line-height:1.2}
+.metric-label{font-size:var(--font-size-xs);color:var(--text-muted);font-family:'Source Code Pro',monospace;font-weight:500;margin-top:2px;line-height:1.3}
+.tech-stack{display:flex;flex-wrap:wrap;gap:var(--space-xs)}
+.tech-tag{
+  background:var(--bg-secondary);color:var(--text-secondary);padding:4px var(--space-sm);border-radius:16px;
+  font-size:var(--font-size-xs);font-weight:500;border:1px solid var(--border-color);font-family:'Source Code Pro',monospace;line-height:1.2;
+}
+.project-links{display:flex;gap:var(--space-sm);flex-wrap:wrap;padding:var(--space-md) var(--space-lg);border-bottom:1px solid var(--border-color);background:var(--bg-secondary)}
+.project-link{
+  display:inline-flex;align-items:center;gap:6px;padding:var(--space-xs) var(--space-md);background:var(--accent-purple);color:#fff;
+  text-decoration:none;border-radius:var(--radius);border:2px solid var(--accent-purple);font-size:var(--font-size-sm);font-weight:700;
+  transition:all var(--transition-fast);line-height:1.4;box-shadow:0 2px 4px rgba(139,92,246,.2);
+}
+.project-link:hover{background:var(--primary-purple);border-color:var(--primary-purple);transform:translateY(-2px);box-shadow:0 4px 12px rgba(124,58,237,.3)}
+.project-link:focus{outline:2px solid var(--accent-blue);outline-offset:2px}
+.project-link svg{width:14px;height:14px;flex-shrink:0}
+.project-hidden{display:none}
+.project-visible{display:flex}
+.projects-button-container{display:flex;justify-content:center;align-items:center;width:100%;margin-top:var(--space-xl);text-align:center}
+@media(max-width:768px){
+  .projects-grid{grid-template-columns:1fr}
+  .project-metrics{grid-template-columns:1fr}
+  .projects-button-container{margin-top:var(--space-lg)}
+  /* Prevent badge overlap on mobile */
+  .project-header{ padding-right: calc(var(--space-lg) + 90px); }
+  .project-badge{ z-index: 2; pointer-events: none; }
+}
+
+@media(max-width:480px){
+  /* Tighter phones: slightly less reserved space, reposition badge */
+  .project-header{ padding-right: calc(var(--space-lg) + 80px); }
+  .project-badge{ top: var(--space-sm); right: var(--space-md); }
+}
+
+/* ================= Journey/Timeline Section (Enhanced) ================= */
+.journey-timeline-dual{
+  max-width:1200px;margin:0 auto;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3xl);padding:var(--space-xl) 0;
+}
+.central-timeline-line{position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--gradient-primary);opacity:.4;transform:translateX(-50%);z-index:1}
+.journey-column{position:relative;z-index:2}
+.journey-column-title{
+  font-family:'Manrope',sans-serif;font-size:var(--font-size-3xl);font-weight:700;text-align:center;margin-bottom:calc(var(--space-xl) + var(--space-xs));
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;position:relative;line-height:1.2;
+}
+.journey-column-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:var(--gradient-primary);border-radius:2px}
+.journey-item-dual{position:relative;margin-bottom:calc(var(--space-xl) + var(--space-xs));padding:0 var(--space-xl)}
+.journey-left .journey-item-dual{padding-left:0;padding-right:var(--space-xl)}
+.journey-right .journey-item-dual{padding-left:var(--space-xl);padding-right:0}
+.journey-dot-dual{
+  position:absolute;top:var(--space-md);width:calc(var(--space-md) + var(--space-xs));height:calc(var(--space-md) + var(--space-xs));
+  background:var(--gradient-primary);border-radius:50%;border:3px solid var(--bg-primary);box-shadow:0 0 0 3px var(--border-color);z-index:3;
+}
+.journey-left .journey-dot-dual{right:-.6rem}
+.journey-right .journey-dot-dual{left:-.6rem}
+.journey-item-dual .journey-card-modern{
+  background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);overflow:hidden;transition:all var(--transition-base);max-width:100%;
+}
+.journey-item-dual .journey-card-modern:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-hover)}
+.journey-item-dual .journey-card-header{padding:calc(var(--space-md) + var(--space-xs)) var(--space-lg);border-bottom:1px solid var(--border-color);background:var(--gradient-card)}
+.journey-item-dual .journey-title-modern{font-size:var(--font-size-lg);margin-bottom:var(--space-xs);color:var(--text-primary);font-weight:600;line-height:1.3}
+.journey-item-dual .journey-meta{display:flex;flex-wrap:wrap;gap:var(--space-sm);align-items:center}
+.journey-item-dual .journey-institution{font-weight:700;color:var(--primary-purple);font-size:var(--font-size-base);line-height:1.4}
+.journey-item-dual .journey-period-modern{color:var(--text-muted);font-size:var(--font-size-sm);font-weight:500;line-height:1.4}
+.journey-item-dual .journey-gpa{background:var(--gradient-secondary);color:#fff;padding:3px 10px;border-radius:var(--space-sm);font-size:var(--font-size-xs);font-weight:700;line-height:1.2}
+.journey-item-dual .journey-card-content{padding:calc(var(--space-md) + var(--space-xs)) var(--space-lg)}
+.journey-item-dual .journey-summary{color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-xs);font-size:var(--font-size-base)}
+.journey-item-dual .read-more-btn-modern{
+  background:none;border:0;color:var(--primary-purple);font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+  padding:var(--space-xs) var(--space-sm);border-radius:var(--radius);transition:all var(--transition-base);white-space:nowrap;position:relative;overflow:hidden;font-size:var(--font-size-sm);line-height:1.4;
+}
+.journey-item-dual .read-more-btn-modern::before{content:'';position:absolute;inset:0;background:var(--gradient-card);opacity:0;transition:opacity var(--transition-base);border-radius:var(--radius)}
+.journey-item-dual .read-more-btn-modern:hover{background:var(--bg-secondary);color:var(--accent-purple);transform:translateX(4px);box-shadow:var(--shadow-sm)}
+.journey-item-dual .read-more-btn-modern:hover::before{opacity:1}
+.journey-item-dual .read-more-btn-modern svg{transition:all var(--transition-base);flex-shrink:0;width:16px;height:16px}
+.journey-item-dual .read-more-btn-modern[aria-expanded="true"] svg{transform:rotate(180deg)}
+.journey-item-dual .journey-details-modern{max-height:0;overflow:hidden;transition:max-height .45s ease,opacity .45s ease;margin-top:0;opacity:0}
+.journey-item-dual .journey-details-modern.visible{max-height:520px;overflow-y: auto;opacity:1;margin-top:var(--space-xs)}
+.journey-item-dual .details-list{list-style:none;margin:var(--space-md) 0}
+.journey-item-dual .details-list li{
+  margin-bottom:var(--space-sm);padding-left:calc(var(--space-md) + var(--space-xs));position:relative;color:var(--text-secondary);font-size:var(--font-size-sm);line-height:1.6;
+}
+.journey-item-dual .details-list li::before{content:'→';position:absolute;left:0;color:var(--primary-purple);font-weight:700}
+.journey-item-dual .journey-achievements{display:flex;flex-wrap:wrap;gap:var(--space-xs);margin-top:var(--space-xs)}
+.journey-item-dual .achievement-tag{
+  background:var(--gradient-secondary);color:#fff;padding:4px var(--space-sm);border-radius:16px;font-size:var(--font-size-xs);font-weight:700;font-family:'Source Code Pro',monospace;line-height:1.2;
+}
+@media(max-width:1024px){
+  .journey-timeline-dual{grid-template-columns:1fr;gap:var(--space-xl);max-width:800px}
+  .central-timeline-line{left:var(--space-xl);transform:none}
+  .journey-column{padding-left:var(--space-3xl)}
+  .journey-column-title{text-align:left;margin-bottom:var(--space-lg);font-size:var(--font-size-2xl)}
+  .journey-column-title::after{left:0;transform:none}
+  .journey-item-dual{padding:0;padding-left:var(--space-md)}
+  .journey-left .journey-item-dual,.journey-right .journey-item-dual{padding-left:var(--space-md);padding-right:0}
+  .journey-dot-dual{left:-2.6rem;right:auto}
+  .journey-left .journey-dot-dual,.journey-right .journey-dot-dual{left:-2.6rem;right:auto}
+}
+@media(max-width:768px){
+  .journey-timeline-dual{gap:var(--space-lg)}
+  .journey-column{padding-left:var(--space-2xl)}
+  .central-timeline-line{left:var(--space-md)}
+  .journey-dot-dual{left:-1.6rem;width:var(--space-md);height:var(--space-md)}
+  .journey-left .journey-dot-dual,.journey-right .journey-dot-dual{left:-1.6rem}
+  .journey-item-dual .journey-meta{flex-direction:column;align-items:flex-start;gap:var(--space-xs)}
+  .journey-item-dual .journey-title-modern{font-size:var(--font-size-md)}
+  .journey-item-dual .journey-institution{font-size:var(--font-size-sm)}
+}
+@media(max-width:480px){
+  .journey-column{padding-left:calc(var(--space-xl) + var(--space-xs))}
+  .central-timeline-line{left:var(--space-sm)}
+  .journey-dot-dual{left:-1.35rem;width:calc(var(--space-sm) + 2px);height:calc(var(--space-sm) + 2px)}
+  .journey-left .journey-dot-dual,.journey-right .journey-dot-dual{left:-1.35rem}
+  .journey-column-title{font-size:var(--font-size-xl)}
+  .journey-item-dual .journey-card-header,.journey-item-dual .journey-card-content{padding:var(--space-md) calc(var(--space-md) + var(--space-xs))}
+}
+
+/* ================= Skills Section (Enhanced) ================= */
+.skills-showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-xl);align-items:start}
+.skill-list{display:flex;flex-direction:column;gap:calc(var(--space-md) + var(--space-xs))}
+.skill-item{position:relative}
+.skill-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem;gap:var(--space-md)}
+.skill-name {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  line-height: 1.3;
+  white-space: normal;       /* allows text wrapping */
+  overflow: visible;         /* prevents clipping */
+  text-overflow: unset;      /* disables ellipsis */
+  flex: 1;
+  min-width: 0;
+}
+.skill-name-main{font-weight:700;font-size:var(--font-size-sm)}
+.skill-name-sub {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: calc(var(--font-size-xs) - 0.05rem);
+  line-height: 1.2;
+  font-weight: 400;
+  white-space: normal;       /* allows wrapping if needed */
+  overflow: visible;         /* prevents clipping */
+  text-overflow: unset;      /* disables truncation */
+}
+.skill-percentage{font-size:var(--font-size-sm);font-weight:700;color:var(--primary-purple);min-width:45px;text-align:right;flex-shrink:0;line-height:1.2}
+.skill-progress-bar{width:100%;height:4px;background:var(--bg-secondary);border-radius:2px;overflow:hidden}
+.skill-progress-fill{height:100%;background:var(--gradient-primary);border-radius:2px;position:relative;transition:width 1s ease}
+.skill-progress-fill::after{
+  content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+  transform:translateX(-100%);transition:transform 0s;
+}
+.skill-item:hover .skill-progress-fill::after{animation:shimmer 2s infinite}
+@keyframes shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@media(max-width:768px){
+  .skill-name,.skill-name-main{font-size:var(--font-size-xs)}
+  .skill-name-sub{font-size:.7rem}
+  .skill-percentage{font-size:var(--font-size-xs);min-width:40px}
+}
+.skill-name-sub:hover {
+  white-space: normal;
+  max-width: none;
+}
+@media(max-width:480px){
+  .skill-name,.skill-name-main{font-size:.75rem}
+  .skill-name-sub{font-size:.65rem}
+  .skill-percentage{font-size:.75rem;min-width:35px}
+}
+
+/* ================= Certifications Section (Enhanced) ================= */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-xl);margin-bottom:var(--space-xl)}
+.cert-button-container{display:flex;justify-content:center;align-items:center;width:100%;margin-top:var(--space-xl);text-align:center}
+.cert-card{display:flex;flex-direction:column;transition:all var(--transition-base)}
+.cert-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--border-hover)}
+.cert-image{width:100%;height:200px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
+.cert-image img{width:100%;height:100%;object-fit:cover;transition:transform var(--transition-base)}
+.cert-card:hover .cert-image img{transform:scale(1.05)}
+.cert-content{padding:var(--space-lg);display:flex;flex-direction:column;flex-grow:1}
+.cert-title{
+  font-size:var(--font-size-lg);font-weight:700;margin-bottom:var(--space-xs);color:var(--text-primary);
+  line-height:1.3;min-height:2.4rem;display:flex;align-items:center;justify-content:center;text-align:center;
+}
+.cert-issuer{color:var(--primary-purple);font-weight:700;font-size:var(--font-size-sm);margin-bottom:4px;text-align:center;line-height:1.4}
+.cert-date{color:var(--text-muted);font-size:var(--font-size-sm);margin-bottom:var(--space-md);font-weight:600;text-align:center;font-family:'Source Code Pro',monospace;line-height:1.4}
+.cert-link-button{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--space-xs);padding:var(--space-sm) 20px;background:var(--gradient-primary);
+  color:#fff!important;text-decoration:none;border-radius:var(--radius);font-weight:700;font-size:var(--font-size-sm);
+  transition:transform var(--transition-base),box-shadow var(--transition-base);border:0;width:100%;margin-top:auto;line-height:1.4;
+}
+.cert-link-button:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(124,58,237,.35)}
+.cert-hidden{display:none}
+.cert-visible{display:flex}
+@media(max-width:768px){.cert-button-container{margin-top:var(--space-lg)}}
+
+/* ================= Beyond Work Section (Enhanced) ================= */
+.interests-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-xl);align-items:stretch}
+.interest-card{text-align:center;display:flex;flex-direction:column;height:100%}
+.interest-image{width:100%;height:250px;overflow:hidden;border-radius:var(--radius);margin-bottom:var(--space-lg);flex-shrink:0}
+.interest-image img{width:100%;height:100%;object-fit:cover;transition:transform var(--transition-base)}
+.interest-card:hover .interest-image img{transform:scale(1.05)}
+.interest-card h3{color:var(--accent-purple);margin-bottom:var(--space-md);font-size:var(--font-size-xl);font-weight:600;flex-shrink:0;line-height:1.3}
+.interest-card p{
+  color:var(--text-secondary);line-height:1.6;flex-grow:1;display:flex;align-items:center;justify-content:center;
+  text-align:center;margin-bottom:var(--space-lg);font-size:var(--font-size-base);
+}
+.interest-button{
+  display:inline-flex;align-items:center;gap:var(--space-xs);padding:10px var(--space-md);background:var(--bg-secondary);color:var(--text-primary);
+  text-decoration:none;border-radius:var(--radius);border:1px solid var(--border-color);font-size:var(--font-size-sm);font-weight:600;
+  transition:all var(--transition-base);font-family:'Source Code Pro',monospace;justify-self:start;margin-top:auto;line-height:1.4;
+}
+.interest-button:hover{background:var(--primary-purple);color:#fff;border-color:var(--primary-purple);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.interest-button svg{width:16px;height:16px;transition:transform var(--transition-base);flex-shrink:0}
+.interest-button:hover svg{transform:scale(1.1)}
+@media(max-width:768px){.interest-button{width:100%;justify-content:center}}
+
+/* Publications list inside cards */
+/* Publications list inside cards */
+.interest-card .pub-list {
+  display: flex;                 /* column layout gives reliable spacing */
+  flex-direction: column;
+  gap: 1rem;                     /* space between items */
+  margin: .25rem 0 0;
+  padding-left: 1.1rem;          /* keeps bullets aligned */
+  list-style: disc outside;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.65;
+  text-align: left;
+}
+
+.interest-card .pub-list li {
+  display: list-item !important; /* defeats any global li:inline styles */
+  padding-bottom: .5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.interest-card .pub-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* optional: make titles pop a bit */
+.interest-card .pub-list li strong {
+  color: var(--accent-purple);
+  font-weight: 600;
+}
+
+/* If a working-papers image is missing, prevent awkward gap */
+.interest-card .interest-image img{ display:block; width:100%; height:auto; }
+.interest-card .interest-image:empty{ display:none; }
+
+.scrollable-content {
+  max-height: 250px;              /* keeps the card compact */
+  overflow-y: auto;               /* adds scroll only when needed */
+  padding-right: .4rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-purple) var(--bg-secondary);
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: var(--accent-purple);
+  border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+/* ================= Leadership Section ================= */
+.leadership-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:var(--space-xl);
+  align-items:stretch;
+}
+.lead-card{
+  display:flex;flex-direction:column;justify-content:space-between;
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:var(--radius-lg);padding:var(--space-lg);
+  transition:transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+.lead-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-hover)}
+.lead-header{margin-bottom:var(--space-sm)}
+.lead-title{font-size:var(--font-size-lg);font-weight:700;color:var(--text-primary);line-height:1.3}
+.lead-meta{display:flex;flex-wrap:wrap;gap:.5rem;color:var(--text-muted);font-size:var(--font-size-sm);margin-top:.25rem}
+.lead-org{font-weight:700;color:var(--primary-purple)}
+.lead-summary{color:var(--text-secondary);line-height:1.6;margin:.5rem 0 var(--space-sm)}
+.lead-points{list-style:none;margin:0;padding:0}
+.lead-points li{
+  position:relative;padding-left:1.25rem;margin:.35rem 0;color:var(--text-secondary);font-size:var(--font-size-sm);line-height:1.6;
+}
+.lead-points li::before{content:"→";position:absolute;left:0;color:var(--primary-purple);font-weight:700}
+.lead-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:var(--space-sm)}
+.lead-tag{
+  background:var(--gradient-secondary);color:#fff;border-radius:999px;
+  padding:.25rem .6rem;font-size:var(--font-size-xs);font-weight:700;font-family:'Source Code Pro',monospace;
+}
+/* Grid keeps cards the same height */
+.lead-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:var(--space-xl);
+  align-items:stretch;
+}
+
+/* Card structure */
+.lead-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.lead-header{margin-bottom:var(--space-md); flex-shrink:0;}
+.lead-tags{margin-top:var(--space-md); flex-shrink:0;}
+
+/* Scroll only the body when it overflows */
+.lead-body{
+  flex:1;
+  overflow:hidden;            /* default: no scroll if content is short */
+}
+
+.scrollable-lead{
+  max-height:260px;           /* tune to taste (e.g., 240–300px) */
+  overflow-y:auto;
+  padding-right:.5rem;        /* space for scrollbar */
+  scrollbar-width:thin;
+  scrollbar-color:var(--accent-purple) var(--bg-secondary);
+}
+
+/* WebKit scrollbar styling */
+.scrollable-lead::-webkit-scrollbar{width:6px}
+.scrollable-lead::-webkit-scrollbar-thumb{
+  background:var(--accent-purple);border-radius:4px
+}
+.scrollable-lead::-webkit-scrollbar-track{background:var(--bg-secondary)}
+
+/* Mobile: a bit taller for touch scrolling */
+@media (max-width:768px){
+  .scrollable-lead{max-height:320px}
+}
+
+
+
+/* ================= Contact Section (Enhanced) ================= */
+.contact-layout{display:grid;grid-template-columns:420px 1fr;gap:var(--space-2xl);align-items:start;max-width:1200px;margin:0 auto}
+.contact-cards-modern{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-lg);height:fit-content;align-self:center}
+.contact-card-modern{
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-sm);
+  background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius);
+  padding:var(--space-lg) calc(var(--space-md) + var(--space-xs));transition:all var(--transition-base);position:relative;overflow:hidden;min-height:140px;justify-content:center;min-width:180px;
+}
+.contact-card-modern::before{content:'';position:absolute;inset:0;background:var(--gradient-card);opacity:0;transition:opacity var(--transition-base);pointer-events:none}
+.contact-card-modern:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-hover)}
+.contact-card-modern:hover::before{opacity:1}
+.contact-icon-modern{
+  display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--gradient-primary);border-radius:var(--radius);
+  color:#fff;flex-shrink:0;transition:all var(--transition-base);margin-bottom:var(--space-xs);
+}
+.contact-card-modern:hover .contact-icon-modern{transform:scale(1.1);box-shadow:0 4px 15px rgba(124,58,237,.3)}
+.contact-info-modern{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-xs)}
+.contact-label-modern{
+  font-size:var(--font-size-sm);font-weight:700;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.5px;margin-bottom:var(--space-xs);
+  font-family:'Source Code Pro',monospace;line-height:1.3;
+}
+.contact-link-modern{
+  color:var(--primary-purple);text-decoration:none;font-weight:600;font-size:var(--font-size-xs);transition:all var(--transition-fast);
+  word-break:keep-all;white-space:nowrap;line-height:1.2;max-width:100%;overflow:hidden;text-overflow:ellipsis;
+}
+.contact-link-modern:hover{color:var(--accent-purple);text-decoration:underline}
+.contact-text-modern{color:var(--text-primary);font-weight:600;font-size:var(--font-size-sm);white-space:nowrap;line-height:1.3}
+.contact-form-modern{position:relative}
+.contact-form-title{
+  font-size:var(--font-size-xl);font-weight:700;color:var(--text-primary);margin-bottom:var(--space-lg);
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.3;
+}
+/* Form styles */
+.form-group{display:flex;flex-direction:column;gap:.45rem;margin-bottom:calc(var(--space-md) + var(--space-xs))}
+.form-label{font-weight:700;color:var(--text-secondary);font-size:var(--font-size-base);font-family:'Source Code Pro',monospace;line-height:1.4}
+.input,.textarea{
+  width:100%;padding:14px var(--space-md);border-radius:var(--radius);border:2px solid var(--border-color);
+  background:var(--bg-card);color:var(--text-primary);outline:0;transition:all var(--transition-base);font-family:inherit;font-size:var(--font-size-base);line-height:1.5;
+}
+.input:focus,.textarea:focus{border-color:var(--primary-purple);box-shadow:0 0 0 4px rgba(124,58,237,.15)}
+.textarea{min-height:120px;resize:vertical;line-height:1.6}
+.form-error{font-size:var(--font-size-sm);color:#ef4444;margin-top:var(--space-xs);display:none;font-weight:600;line-height:1.4}
+.form-error.visible{display:block}
+.char-counter{font-size:var(--font-size-xs);color:var(--text-muted);text-align:right;margin-top:-var(--space-xs);font-weight:600;line-height:1.3}
+.btn-submit{
+  width:100%;padding:var(--space-md) 20px;border:0;border-radius:var(--radius);background:var(--gradient-primary);color:#fff;
+  font-weight:800;font-size:var(--font-size-md);cursor:pointer;transition:transform var(--transition-base),box-shadow var(--transition-base);font-family:inherit;line-height:1.4;
+}
+.btn-submit:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 12px 30px rgba(124,58,237,.35)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn-loader{display:inline-flex;align-items:center;gap:var(--space-xs)}
+.success-message{
+  position:absolute;inset:0;background:var(--bg-card);padding:var(--space-xl);display:none;align-items:center;justify-content:center;
+  border-radius:var(--radius-lg);backdrop-filter:blur(10px);z-index:2;
+}
+.success-message.visible{display:flex}
+.success-content{text-align:center;max-width:320px}
+.success-icon{font-size:calc(var(--font-size-xl) + var(--font-size-lg));margin-bottom:var(--space-xs);line-height:1}
+.success-content h4{margin-bottom:var(--space-xs);color:var(--text-primary);font-size:var(--font-size-lg)}
+.success-content p{margin-bottom:var(--space-lg);color:var(--text-secondary);font-size:var(--font-size-base);line-height:1.5}
+.success-actions{display:flex;flex-direction:column;gap:.6rem}
+.fallback-link{
+  padding:var(--space-xs) var(--space-md);background:var(--bg-secondary);color:var(--text-primary);text-decoration:none;border-radius:var(--radius);
+  border:1px solid var(--border-color);font-size:var(--font-size-sm);font-weight:600;transition:all var(--transition-fast);line-height:1.4;
+}
+.fallback-link:hover{background:var(--primary-purple);color:#fff;border-color:var(--primary-purple)}
+@media(max-width:1024px){
+  .contact-layout{grid-template-columns:1fr;gap:var(--space-xl)}
+  .contact-cards-modern{grid-template-columns:repeat(2,1fr);gap:calc(var(--space-md) + var(--space-xs));max-width:500px;margin:0 auto}
+}
+@media(max-width:768px){
+  .contact-cards-modern{grid-template-columns:1fr;max-width:320px}
+  .contact-card-modern{min-height:120px;padding:calc(var(--space-md) + var(--space-xs)) var(--space-md);min-width:auto}
+  .contact-link-modern{font-size:var(--font-size-sm);white-space:normal;word-break:break-word}
+  .contact-icon-modern{width:36px;height:36px}
+}
+@media(max-width:480px){
+  .contact-layout{gap:var(--space-lg)}
+  .contact-card-modern{min-height:100px;padding:var(--space-md)}
+}
+
+/* ================= Utilities (Enhanced) ================= */
+.fade-in{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.4,0,.2,1)}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.scroll-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:var(--gradient-primary);z-index:1001;transition:width .1s}
+.scroll-to-top{
+  position:fixed;bottom:30px;right:30px;width:50px;height:50px;background:var(--gradient-primary);border:0;border-radius:50%;
+  color:#fff;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(20px);transition:all var(--transition-base);z-index:1000;display:flex;align-items:center;justify-content:center;
+}
+.scroll-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.scroll-to-top:hover{transform:translateY(-5px);box-shadow:var(--shadow-glow)}
+
+/* ================= Form Notes and States ================= */
+.form-note{padding:var(--space-sm) var(--space-md);border-radius:var(--radius);font-size:var(--font-size-sm);font-weight:600;margin-top:var(--space-md);text-align:center;line-height:1.4}
+.form-note.error{background:rgba(239,68,68,.1);color:#dc2626;border:1px solid rgba(239,68,68,.3)}
+.form-note.success{background:rgba(34,197,94,.1);color:#059669;border:1px solid rgba(34,197,94,.3)}
+
+/* ================= Footer (Enhanced) ================= */
+footer{ text-align:center;padding:var(--space-2xl) var(--space-xl);color:var(--text-muted);border-top:1px solid var(--border-color);background:var(--bg-secondary)}
+footer p:first-child{margin-bottom:var(--space-md);font-size:var(--font-size-md);line-height:1.5}
+footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
+
+/* ================= Enhanced Loader with Side-by-Side Sequential Cards ================= */
+.loader-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(5px);
+  display:flex;align-items:center;justify-content:center;z-index:10000;transition:opacity .8s ease,visibility .8s ease;
+}
+.loader-overlay.hidden{opacity:0;visibility:hidden}
+.loader-backdrop{position:absolute;inset:0;background:linear-gradient(135deg,var(--primary-purple),var(--primary-blue));opacity:.08}
+.loader-main{position:absolute;top:15%;left:50%;transform:translateX(-50%);text-align:center;color:var(--text-primary);z-index:4;width:100%}
+.loader-main .loader-spinner{width:60px;height:60px;border:3px solid var(--border-color);border-top:3px solid var(--primary-purple);border-radius:50%;animation:loaderSpin 1s linear infinite;margin:0 auto var(--space-md)}
+.loader-main .loader-text{display:none}
+.loader-main .loader-subtext{
+  font-size:var(--font-size-3xl);font-weight:600;opacity:0;animation:fadeInUp .6s ease forwards .4s;color:var(--text-primary);
+  text-shadow:0 1px 3px rgba(234, 231, 231, 0.6);margin-top:var(--space-xs);line-height:1.4;
+}
+[data-theme="dark"] .loader-main .loader-subtext{color:var(--accent-purple);text-shadow:0 1px 3px rgba(124,58,237,.3)}
+/* Introduction Cards */
+.intro-cards{
+  position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;
+  padding:var(--space-xl);gap:var(--space-xl);opacity:1;z-index:3;pointer-events:none;
+}
+.intro-card{
+  background:var(--bg-card);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:calc(var(--space-md) + var(--space-sm)) var(--space-lg);
+  text-align:center;min-width:240px;max-width:260px;min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:var(--space-sm);overflow:hidden;box-shadow:var(--shadow-lg);opacity:0;transform:translateY(50px) scale(.9);transition:all .6s cubic-bezier(.4,0,.2,1);
+}
+.intro-card::before{content:'';position:absolute;inset:0;background:var(--gradient-card);opacity:.5;pointer-events:none}
+.intro-card>*{position:relative;z-index:1}
+.intro-icon{width:48px;height:48px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:var(--space-xs);animation:iconPulse 2s ease-in-out infinite}
+.intro-card h4{font-size:var(--font-size-lg);font-weight:700;color:var(--text-primary);margin-bottom:var(--space-xs);line-height:1.3}
+.intro-card p{font-size:var(--font-size-sm);color:var(--text-secondary);margin-bottom:var(--space-md);line-height:1.4}
+/* Desktop Animation Classes */
+.intro-card-scroll{order:1;animation:cardSlideIn .6s ease forwards 1s}
+.intro-card-nav{order:2;animation:cardSlideIn .6s ease forwards 2s}
+.intro-card-theme{order:3;animation:cardSlideIn .6s ease forwards 3s}
+/* Interactive Elements */
+.scroll-arrow-bounce{animation:bounceDown 2s ease-in-out infinite;color:var(--primary-purple)}
+.click-animation{position:relative;width:32px;height:32px}
+.click-pointer{width:16px;height:16px;background:var(--primary-purple);border-radius:50%;position:absolute;top:var(--space-xs);left:var(--space-xs);animation:clickPulse 2s ease-in-out infinite}
+.click-pointer::before{
+  content:'';position:absolute;top:-4px;left:-4px;right:-4px;bottom:-4px;border:2px solid var(--primary-purple);
+  border-radius:50%;opacity:0;animation:clickRipple 2s ease-in-out infinite;
+}
+.theme-toggle-preview{
+  background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:20px;width:60px;height:32px;position:relative;cursor:pointer;transition:all var(--transition-base);display:flex;align-items:center;
+}
+.theme-toggle-slider-preview{
+  position:absolute;top:4px;left:4px;width:24px;height:24px;background:#fff;border-radius:50%;
+  display:grid;place-items:center;font-size:12px;transition:all var(--transition-base);animation:themeSliderMove 3s ease-in-out infinite;box-shadow:0 2px 4px rgba(0,0,0,.1);
+}
+/* Animations */
+@keyframes loaderSpin{to{transform:rotate(360deg)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes iconPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(124,58,237,.4)}50%{transform:scale(1.05);box-shadow:0 0 0 10px rgba(124,58,237,0)}}
+@keyframes cardSlideIn{0%{opacity:0;transform:translateY(50px) scale(.9)}50%{transform:translateY(10px) scale(.95)}100%{opacity:.95;transform:translateY(0) scale(1)}}
+@keyframes bounceDown{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(8px)}60%{transform:translateY(4px)}}
+@keyframes clickPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.8);opacity:.6}}
+@keyframes clickRipple{0%{transform:scale(.5);opacity:1}100%{transform:scale(2.5);opacity:0}}
+@keyframes themeSliderMove{0%,100%{left:4px;transform:scale(1)}25%{transform:scale(1.1)}50%{left:32px;transform:scale(1)}75%{transform:scale(1.1)}}
+/* Mobile Responsive for Loader — Mobile shows spinner + Namaste + Theme card only */
+@media (max-width:768px){
+  /* Ensure overlay and main loader content are visible */
+  .loader-overlay{ display:flex !important; }
+  .loader-main{ display:block !important; }
+  .loader-spinner{ display:block !important; }
+  .loader-subtext{ display:block !important; }
+
+  /* Intro cards container visible to host only the theme card */
+  .intro-cards{ display:flex !important; align-items:center; justify-content:center; gap: var(--space-md); top:60%; padding: var(--space-md); }
+
+  /* Hide all intro cards by default on mobile */
+  .intro-cards .intro-card{ display:none !important; }
+
+  /* Re-enable ONLY the Theme Toggle card */
+  .intro-cards .intro-card-theme{ display:flex !important; opacity:.95; transform:translateY(0) scale(1); animation:none; }
+}
+
+@media (max-width:480px){
+  /* Slightly adjust positions and sizes for small phones */
+  .loader-main{ top:15%; }
+  .intro-cards{ top:62%; }
+  .theme-toggle-preview{ width:50px; height:28px; }
+  .theme-toggle-slider-preview{ width:20px; height:20px; font-size:10px; }
+}
+  </style>
+</head>
+
+<body data-theme="light">
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Background -->
+<div class="bg-canvas" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <div class="logo">
+        <div class="logo-icon">SS</div>
+        <span>Shikhar Shukla</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#beyond" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Leadership</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <div class="theme-toggle-slider" aria-hidden="true">☀️</div>
+      </button>
+    </div>
+  </nav>
+<!-- Enhanced Loader with Introduction Cards -->
+<div class="loader-overlay" id="loaderOverlay" aria-hidden="true">
+  <div class="loader-backdrop"></div>
+  
+<!-- Main Loader Content -->
+<div class="loader-main">
+  <div class="loader-spinner" role="status" aria-label="Loading"></div>
+  <div class="loader-subtext">Namaste 🙏</div>
+</div>
+  <!-- Introduction Cards -->
+  <div class="intro-cards" id="introCards">
+    <!-- Left Card - Scroll Down -->
+    <div class="intro-card intro-card-scroll">
+      <div class="intro-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l3 3 7-7"/>
+          <path d="M7 6l3 3 7-7"/>
+        </svg>
+      </div>
+      <h4>Scroll Down</h4>
+      <p>Explore the website</p>
+      <div class="scroll-arrow-bounce">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Center Card - Navigation -->
+    <div class="intro-card intro-card-nav">
+      <div class="intro-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </div>
+      <h4>Navigation Bar</h4>
+      <p>Quick access to sections</p>
+      <div class="click-animation">
+        <div class="click-pointer"></div>
+      </div>
+    </div>
+
+    <!-- Right Card - Theme Toggle -->
+ <!-- Right Card - Theme Toggle (Updated) -->
+<div class="intro-card intro-card-theme">
+  <div class="intro-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"/>
+      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </svg>
+  </div>
+  <h4>Theme Toggle</h4>
+  <p>Light / Dark mode</p>
+  <div class="theme-toggle-preview">
+    <div class="theme-toggle-slider-preview">☀️</div>
+  </div>
+</div>
+
+  </div>
+</div>
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Intro">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="./images/shikharprofile.jpg" alt="Portrait of Shikhar Shukla" loading="eager" />
+          </div>
+          <div class="hero-badge">Graduate • Open to Opportunities</div>
+          <h1 class="hero-title" id="heroTitle">Shikhar Shukla</h1>
+          <p class="hero-subtitle">Clinician-Turned Data Scientist | Ex-CDC | Advancing AI & Analytics for Public Health and Clinical Research</p>
+          <p class="hero-description">
+            Healthcare & AI professional with 10+ years of combined clinical and data science expertise, 
+            bridging hands-on dental practice with advanced biomedical informatics. Former CDC Public Health Informatics Fellow, 
+            experienced in designing reproducible pipelines and scalable AI/ML solutions across multimodal health data - including EHRs, 
+            imaging, physiologic signals, and voice. Skilled in statistical modeling, time-series forecasting, and deep learning for risk prediction, 
+            clinical decision support, and public health surveillance. Strong track record of peer-reviewed publications, international conference presentations, 
+            and collaborative research with clinicians, public health agencies, and academic institutions. Passionate about translating AI innovations into equitable, 
+            real-world healthcare impact.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+            </a>
+            <a href="./ShikharShukla_ResearchCV.pdf" download class="btn btn-secondary">
+              <span>Download Resume</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m7-5l5 5m0 0l5-5m-5 5V3"/></svg>
+            </a>
+          </div>
+
+          <div class="stats-bar" aria-label="Key stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="10" data-suffix="+">0</div>
+              <div class="stat-label">Years in Healthcare & Data Science</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="20" data-suffix="+">0</div>
+              <div class="stat-label">Major Projects & Pipelines</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="9">0</div>
+              <div class="stat-label">CDC Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="9" data-suffix="+">0</div>
+              <div class="stat-label">Publications & Abstracts</div>
+            </div>
+          </div>
+
+
+
+          <!-- Honors Section (flush under stats bar) -->
+          <div class="honors-bar" aria-label="Honors and recognition" class="fade-in">
+            <div class="honors-track">
+              <!-- Honor 1 -->
+              <article class="honor-card" role="group" aria-label="CDC Certificate">
+                <div class="honor-icon" aria-hidden="true">🏅</div>
+                <div class="honor-body">
+                  <h4>CDC Certificate of Outstanding Contribution</h4>
+                  <p>Advancing <strong>Artificial Intelligence in Public Health</strong>.</p>
+                </div>
+              </article>
+
+              <!-- Honor 2 -->
+              <article class="honor-card" role="group" aria-label="CDC Fellowship">
+                <div class="honor-icon" aria-hidden="true">🛡️</div>
+                <div class="honor-body">
+                  <h4>Ex-CDC Fellow (NCEZID)</h4>
+                  <p>Led <strong>9</strong> federal projects in surveillance AI & pipelines.</p>
+                </div>
+              </article>
+
+              <!-- Honor 3 -->
+              <article class="honor-card" role="group" aria-label="AMIA 2024">
+                <div class="honor-icon" aria-hidden="true">🎓</div>
+                <div class="honor-body">
+                  <h4>AMIA 2024 - Poster</h4>
+                  <p>Clinical analytics accepted at <strong>American Medical Informatics Association</strong>.</p>
+                </div>
+              </article>
+
+              <!-- Honor 4 -->
+              <article class="honor-card" role="group" aria-label="IEEE CBMS 2024">
+                <div class="honor-icon" aria-hidden="true">📄</div>
+                <div class="honor-body">
+                  <h4>IEEE CBMS 2024 - Paper</h4>
+                  <p>Wound trajectory <strong>interpolation & forecasting. Presented at Guadalajara, Mexico</strong>.</p>
+                </div>
+              </article>
+
+                  <article class="honor-card" role="group" aria-label="AIME 2023">
+                    <div class="honor-icon" aria-hidden="true">🔬</div>
+                    <div class="honor-body">
+                      <h4>Artificial Intelligence in Medicine (AIME) 2023 - AI in Radiology</h4>
+                      <p>Presented NSF-supported imaging AI research at Slovenia.</p>
+                    </div>
+                  </article>
+
+              <!-- Honor 5 -->
+              <article class="honor-card" role="group" aria-label="DHIS2 Conference">
+                <div class="honor-icon" aria-hidden="true">🧩</div>
+                <div class="honor-body">
+                  <h4>DHIS2 Annual Conf. 2024</h4>
+                  <p><strong>Novel OpenCPU + DHIS2 tool</strong> in-platform statistics. Presented at University of Oslo</p>
+                </div>
+              </article>
+
+              <article class="honor-card" role="group" aria-label="DHIS2 2025">
+                <div class="honor-icon" aria-hidden="true">🌐</div>
+                <div class="honor-body">
+                  <h4>DHIS2 Annual Conf. 2025</h4>
+                  <p><strong>DHIS2 for U.S. Community/Public Health</strong> accepted.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+    </section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About Me">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Clinically-Grounded · AI-Driven</h2>
+      <p class="section-subtitle">Health informatics researcher bridging clinical expertise with advanced data science to create reproducible, equitable, and deployable AI solutions for healthcare and public health.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Clinical/Public Health -->
+      <div class="card fade-in about-card">
+        <div class="skill-category-icon" aria-hidden="true">🩺</div>
+        <h3>Clinical & Public Health Insight</h3>
+        <p>Clinician-turned-data scientist with a decade of clinical experience, translating patient-level complexity into structured data problems. Skilled at interpreting biomedical, epidemiologic, and sensor-derived data through the lens of health outcomes and equity.</p>
+      </div>
+
+      <!-- Analytics & Modeling -->
+      <div class="card fade-in about-card">
+        <div class="skill-category-icon" aria-hidden="true">📊</div>
+        <h3>Statistical & Machine Learning Modeling</h3>
+        <p>Design and validate predictive pipelines using regression, ensemble methods, and deep learning architectures, including recurrent and transformer-based models for temporal and multimodal data, focused on interpretability, calibration, and fairness.</p>
+      </div>
+
+      <!-- Engineering & Platforms -->
+      <div class="card fade-in about-card">
+        <div class="skill-category-icon" aria-hidden="true">⚙️</div>
+        <h3>Data Engineering & Integration</h3>
+        <p>Build scalable and version-controlled data pipelines using Python, SQL, PySpark, and cloud-based platforms. Experienced in ETL design, schema mapping, and high-volume data processing that ensure reproducibility and auditability from raw data to model output.</p>
+      </div>
+
+      <!-- Equity & Reproducibility -->
+      <div class="card fade-in about-card">
+        <div class="skill-category-icon" aria-hidden="true">🌍</div>
+        <h3>Equity & Reproducibility</h3>
+        <p>Embed fairness and transparency into model development through bias analysis, stratified evaluation, and open documentation, advancing trustworthy, generalizable AI in real-world healthcare settings.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- PROJECTS -->
+<section id="projects" aria-label="Featured Projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Clinical + public health data systems, human-in-the-loop AI, and scalable pipelines.</p>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- 1 -->
+      <article class="project-card fade-in project-visible">
+        <div class="project-header">
+          <span class="project-badge">CDC</span>
+          <h3 class="project-title">FungiSurv - AI-Assisted Schema Mapping & Data Integration</h3>
+          <div class="project-type">Public Health Informatics • Data Engineering</div>
+        </div>
+        <div class="project-content">
+          <p class="project-description"> I architected the core ingestion flow for CDC’s fungal disease surveillance (FungiSurv) to handle diverse state CSV/Excel formats.
+      The system validates uploads, uses GPT-4 to propose column-to-standard mappings, lets epidemiologists review/approve edits,
+      then standardizes and integrates data with full versioning and audit logs. Outcome: less manual mapping, faster partner onboarding,
+      and higher-quality, reproducible surveillance datasets.</p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">Semi-Auto</span><div class="metric-label">Upload→Integrate</div></div>
+            <div class="metric-item"><span class="metric-value">GPT-4</span><div class="metric-label">Mapping suggestion</div></div>
+            <div class="metric-item"><span class="metric-value">Versioned</span><div class="metric-label">Configs & audit</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span><span class="tech-tag">Palantir's Foundry/1CDP</span><span class="tech-tag">Pipeline Builder</span><span class="tech-tag">GPT-4</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+<!-- Facility Matching & Geocoding -->
+      <article class="project-card fade-in project-visible">
+        <div class="project-header">
+          <span class="project-badge">CDC</span>
+          <h3 class="project-title">Facility Matching & Geocoding for AR Surveillance</h3>
+          <div class="project-type">Record Linkage • Geospatial Analytics</div>
+        </div>
+        <div class="project-content">
+          <p class="project-description">
+            Developed a semi-automated pipeline to standardize and match healthcare facilities across state surveillance data. 
+            Combined proportional/partial/fixed string distance metrics with CMS and NPI identifiers, then applied geocoding to resolve ambiguous matches. 
+            Outcome: higher-confidence matches, reduced manual review, and more precise spatial data for antimicrobial resistance risk analysis.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">Top-5</span><div class="metric-label">Candidate matches</div></div>
+            <div class="metric-item"><span class="metric-value">CMS+NPI</span><div class="metric-label">ID fusion</div></div>
+            <div class="metric-item"><span class="metric-value">Geo-Precise</span><div class="metric-label">Facility resolution</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Fuzzy Matching</span>
+            <span class="tech-tag">String Distances</span>
+            <span class="tech-tag">Geocoding</span>
+            <span class="tech-tag">Palantir's Foundry/1CDP</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI-Enabled Radiology (LibreHealth RIS + OHIF) -->
+      <article class="project-card fade-in project-visible">
+        <div class="project-header">
+          <span class="project-badge">Research</span>
+          <h3 class="project-title">AI-Enabled Radiology in LibreHealth RIS + OHIF</h3>
+          <div class="project-type">Clinical AI • Human-in-the-Loop</div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://gitlab.com/librehealth/radiology/lh-radiology-aimodel-service" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            <span>GitLab</span>
+          </a>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-34344-5_46" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>Research Paper</span>
+          </a>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Built an end-to-end AI assistant within LibreHealth’s open-source Radiology Information System (RIS), integrating directly with the OHIF viewer. 
+            Enabled radiologists to train, retrain, and apply models in workflow using DICOM-SR overlays, active learning (few-shot retraining on feedback), 
+            and swarm learning to share model weights across users. Demonstrated with CheXNet on chest X-rays and presented at AIME 2023 (NSF-supported). 
+            Outcome: proof of concept for scalable, standards-based AI embedded in radiology workflows.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">DICOM-SR</span><div class="metric-label">Standards overlays</div></div>
+            <div class="metric-item"><span class="metric-value">Few-Shot</span><div class="metric-label">Retraining loop</div></div>
+            <div class="metric-item"><span class="metric-value">Swarm</span><div class="metric-label">Shared model weights</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">OHIF</span>
+            <span class="tech-tag">LibreHealth RIS</span>
+            <span class="tech-tag">DICOM</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">CheXNet</span>
+            <span class="tech-tag">JavaScript/TypeScript</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Wound Trajectory Forecasting -->
+      <article class="project-card fade-in project-visible">
+        <div class="project-header">
+          <span class="project-badge">Research</span>
+          <h3 class="project-title">Interpolating & Forecasting Wound Trajectory</h3>
+          <div class="project-type">Time Series • Clinical Outcomes</div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Amorfati123/wound-forecast" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10600744" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>Research Paper</span>
+          </a>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Built a reproducible pipeline to impute, interpolate, and forecast chronic wound healing trajectories across 
+            14,571 wounds from 6,171 patients. Used XGBoost for demographic imputation, AIC-driven selection across interpolation 
+            methods (Linear, Krogh, Akima, RBF), and forecasting with Holt-Winters, ARIMA, Prophet, and deep models (LSTM, BiLSTM). 
+            Integrated subgroup fairness checks by gender, race, and ethnicity. Published in IEEE CBMS 2024.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">14,571</span><div class="metric-label">Wounds analyzed</div></div>
+            <div class="metric-item"><span class="metric-value">98.9%</span><div class="metric-label">Good interpolation</div></div>
+            <div class="metric-item"><span class="metric-value">Multi-Model</span><div class="metric-label">Forecasting</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">ARIMA</span>
+            <span class="tech-tag">Prophet</span>
+            <span class="tech-tag">LSTM/BiLSTM</span>
+            <span class="tech-tag">AIC</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- DHIS2 + OpenCPU (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">DHIS2</span>
+          <h3 class="project-title">DHIS2 + OpenCPU - In-Platform Statistics App</h3>
+          <div class="project-type">Open Source • R Execution</div>
+        </div>
+
+        <!-- (Links optional; add if you later publish a demo or repo)-->
+        <div class="project-links">
+          <a href="https://community.dhis2.org/t/enabling-data-driven-exploration-a-novel-integration-of-dhis2-and-opencpu-for-statistical-analysis-within-an-interactive-application/58089" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            <span>Abstract</span>
+          </a>
+        </div>
+        
+
+        <div class="project-content">
+          <p class="project-description">
+            Designed and built a DHIS2 web app that runs R code <em>inside</em> the platform via OpenCPU. 
+            Users select DHIS2 datasets through the API, write/execute R in an editor (RStudio-like layout), 
+            and view results and plots in real time, no CSV exports, preserving data governance and reducing friction 
+            for analysts and epidemiologists.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">In-app</span><div class="metric-label">Live R execution</div></div>
+            <div class="metric-item"><span class="metric-value">API</span><div class="metric-label">Direct DHIS2 pulls</div></div>
+            <div class="metric-item"><span class="metric-value">Secure</span><div class="metric-label">No downloads</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">DHIS2</span>
+            <span class="tech-tag">OpenCPU</span>
+            <span class="tech-tag">R</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- IOH Time-Series Mortality Prediction (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">Research</span>
+          <h3 class="project-title">Predicting 30-Day Mortality from Intraoperative Hemodynamics</h3>
+          <div class="project-type">EHR Time Series • Surgical Outcomes</div>
+        </div>
+
+        <!-- Optional links (add poster if you have a PDF or GitHub repo) -->
+        
+        <div class="project-links">
+          <a href="https://amia.secure-platform.com/symposium/gallery/rounds/82001/details/11521" target="_blank" rel="noopener noreferrer" class="project-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            <span>Conference Poster link</span>
+          </a>
+        </div>
+        
+
+        <div class="project-content">
+          <p class="project-description">
+            Led analysis of 42 intraoperative MAP (Mean Arterial Pressure) features from 10 years of EHR data in noncardiac surgeries. 
+            Identified dynamic blood pressure variability markers-percent shifts, prolonged hypotension, frequent changepoints, and entropy measures-
+            as strong predictors of 30-day mortality, beyond conventional threshold methods. Presented at AMIA 2024.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">42</span><div class="metric-label">TS features</div></div>
+            <div class="metric-item"><span class="metric-value">20</span><div class="metric-label">Predictive indicators</div></div>
+            <div class="metric-item"><span class="metric-value">10 yrs</span><div class="metric-label">EHR cohort</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TSFRESH</span>
+            <span class="tech-tag">TSFEL</span>
+            <span class="tech-tag">Changepoint Detection (PELT)</span>
+            <span class="tech-tag">Logistic Regression</span>
+            <span class="tech-tag">EHR Data</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Hidden · Mining NNDSS ODSE for Candida auris Surveillance -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">CDC</span>
+          <h3 class="project-title">Mining NNDSS ODSE for Candida auris Surveillance</h3>
+          <div class="project-type">SQL Engineering • Data Modeling</div>
+        </div>
+        <div class="project-content">
+          <p class="project-description">
+            Reverse-engineered the NNDSS Operational Data Store (ODSE) to recover priority elements missing from standard views.
+            Built a full ERD across 200+ SQL tables and a dynamic SQL scanner to locate target values across free-text columns.
+            Mapped recovered elements to US state's case IDs and NNDSS identifiers, establishing a validated pathway to enrich
+            <em>Candida auris</em> surveillance without waiting for upstream schema changes.
+          </p>
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item"><span class="metric-value">200+</span><div class="metric-label">ODSE tables profiled</div></div>
+            <div class="metric-item"><span class="metric-value">Dynamic</span><div class="metric-label">SQL value scanner</div></div>
+            <div class="metric-item"><span class="metric-value">Linkage</span><div class="metric-label">TX ↔ NNDSS IDs</div></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">T-SQL</span>
+            <span class="tech-tag">SSMS</span>
+            <span class="tech-tag">ERD</span>
+            <span class="tech-tag">Dynamic SQL</span>
+            <span class="tech-tag">Data Mapping</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- FORT — Fungal Outbreak Response Tracker (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">Federal</span>
+          <h3 class="project-title">FORT - Fungal Outbreak Response Tracker</h3>
+          <div class="project-type">Product Analytics • UI/UX in Workshop</div>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Transformed CDC’s internal outbreak tracker into a fast, analyst-friendly product in Palantir Foundry (1CDP). 
+            Fixed broken filtering, added inline response toggles for rapid status updates, enabled one-click PDF & large Excel exports, 
+            and extended the ontology to include Donor-Derived Infections (DDI).
+             <strong>Result: faster and easier outbreak tracking for epidemiologists, enabling CDC to respond to multi-state fungal outbreaks more quickly and on time.</strong>
+          </p>
+
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item">
+              <span class="metric-value">Real-time</span>
+              <div class="metric-label">Interactive filtering</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">200k</span>
+              <div class="metric-label">Row PDF/Excel export</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">DDI</span>
+              <div class="metric-label">Ontology expansion</div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <span class="tech-tag">Foundry Workshop</span>
+            <span class="tech-tag">Ontology</span>
+            <span class="tech-tag">UX</span>
+            <span class="tech-tag">Reporting</span>
+            <span class="tech-tag">Agile</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Clinical Risk Analytics in Dentistry (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">Healthcare</span>
+          <h3 class="project-title">Clinical Risk Analytics in Dentistry</h3>
+          <div class="project-type">Population Health • Predictive Modeling</div>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Built one of the first integrated datasets combining clinical, behavioral, and socioeconomic indicators 
+            from a longitudinal dental population (>2,000 patients). 
+            Applied rigorous statistical and regression methods (logistic + ordinal models) to identify multifactorial 
+            determinants of caries, periodontal disease, and treatment outcomes. 
+            Designed reproducible R pipelines with validated outputs, enabling evidence-based preventive strategies 
+            and community outreach for underserved populations.
+          </p>
+
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item">
+              <span class="metric-value">2,000+</span>
+              <div class="metric-label">Patients studied</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Validated</span>
+              <div class="metric-label">Regression models</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Actionable</span>
+              <div class="metric-label">Risk patterns</div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <span class="tech-tag">R</span>
+            <span class="tech-tag">Logistic Regression</span>
+            <span class="tech-tag">Ordinal Regression</span>
+            <span class="tech-tag">Data Visualization</span>
+            <span class="tech-tag">Population Health</span>
+          </div>
+        </div>
+      </article>
+
+<div class="projects-button-container">
+  <button id="viewAllBtn" class="btn btn-secondary">
+        <span id="btnText">View All Projects</span>
+        <svg id="btnIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+   <!-- JOURNEY -->
+<section id="journey" aria-label="Professional Journey">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Career Path</span>
+      <h2 class="section-title">Professional Journey</h2>
+      <p class="section-subtitle">From clinical practice to AI-driven health informatics and public health innovation</p>
+    </div>
+
+    <div class="journey-timeline-dual">
+      <div class="central-timeline-line" aria-hidden="true"></div>
+      
+      <!-- Academics Column -->
+      <div class="journey-column journey-left">
+        <h3 class="journey-column-title">Academics</h3>
+        <!-- Academic Item: Mercy Hospital Internship -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">Healthcare Data Analyst Intern</h4>
+              <div class="journey-meta">
+                <span class="journey-institution">Mercy Hospital | Springfield, Missouri</span>
+                <span class="journey-period-modern">Jun 2023 - Aug 2023</span>
+              </div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">Delivered data-driven insights to optimize hospital operations, staffing, and patient care efficiency through advanced analytics and visualization projects.</p>
+              <button class="read-more-btn-modern" data-target="journey-mercy"><span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="journey-details-modern" id="journey-mercy">
+                <div class="details-content">
+                  <p><strong>Key Highlights & Projects:</strong></p>
+                  <ul class="details-list">
+                    <li><strong>Night Admissions Analysis:</strong> Identified trends and peak-hour distributions in nocturnist admissions, leading to recruitment of additional physicians and improved overnight patient care.</li>
+                    <li><strong>Hospitalist Workload & Billing Accuracy:</strong> Analyzed six months of encounter and procedure code data to balance staffing loads; uncovered charge code discrepancies that triggered billing process improvements.</li>
+                    <li><strong>Discharge Efficiency Study:</strong> Developed a new metric for physician discharge efficiency across Springfield & Lebanon facilities; provided leadership with actionable insights for resource allocation and process optimization.</li>
+                  </ul>
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Healthcare Analytics</span>
+                    <span class="achievement-tag">Python & Pandas</span>
+                    <span class="achievement-tag">Operational Efficiency</span>
+                    <span class="achievement-tag">Data Visualization</span>
+                    <span class="achievement-tag">Process Improvement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Item: M.S. Health Informatics -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">M.S. Health Informatics (STEM)</h4>
+              <div class="journey-meta">
+                <span class="journey-institution">Indiana University – Indianapolis</span>
+                <span class="journey-period-modern">Aug 2022 - May 2024</span>
+                <span class="journey-gpa">GPA: 3.8 / 4.0</span>
+              </div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">Graduate training in biomedical data science, clinical informatics, and public health analytics - combining coursework with applied projects in healthcare operations, prediction, and AI research.</p>
+              <button class="read-more-btn-modern" data-target="journey-ms"><span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="journey-details-modern" id="journey-ms">
+                <div class="details-content">
+                  <p><strong>Key Highlights & Projects:</strong></p>
+                  <ul class="details-list">
+                    <li><strong>Substance Use Risk Prediction:</strong> Integrated six years of NSDUH data, applied statistical tests and ML (CatBoost, Random Forest), and identified demographic/behavioral predictors to inform prevention strategies.</li>
+                    <li><strong>Hospital Length of Stay Modeling:</strong> Built predictive models (GLM, Random Forest, XGBoost) on hospitalization data; identified admission type, insurance, and demographics as key LOS drivers.</li>
+                    <li><strong>SecureData Shield 2.0:</strong> Designed a multi-layer IoT encryption framework combining AES-256, Blockchain, and deep learning for scalable and secure transmission of health device data.</li>
+                    <li><strong>Lab Research – Radiology AI:</strong> Integrated AI into LibreHealth RIS with OHIF viewer, enabling in-workflow retraining and swarm learning; results presented at AIME 2023 (NSF-supported).</li>
+                    <li><strong>Lab Research – Wound Forecasting:</strong> Developed interpolation + forecasting pipelines (ARIMA, Prophet, LSTM/BiLSTM) for 14,500 chronic wounds; published IEEE CBMS 2024 paper.</li>
+                    <li><strong>Lab Research – DHIS2+OpenCPU:</strong> Engineered a novel in-platform statistical tool for DHIS2 with secure R execution; abstract accepted at DHIS2 Annual Conference 2024.</li>
+                  </ul>
+                  <p><strong>Coursework:</strong> Clinical Decision Support Systems, Applied Statistical Methods, Health Informatics Standards, Clinical Information Systems, Project Management, Machine Learning in Bioinformatics, Health Information Exchange.</p>
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Biomedical Data Science</span>
+                    <span class="achievement-tag">Machine Learning</span>
+                    <span class="achievement-tag">Health Informatics</span>
+                    <span class="achievement-tag">Predictive Analytics</span>
+                    <span class="achievement-tag">Public Health</span>
+                    <span class="achievement-tag">Research Publications</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Academic Item 4: B.D.S. -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">B.D.S. – Bachelor of Dental Surgery</h4>
+              <div class="journey-meta">
+                <span class="journey-institution">Devi Ahilya University - Indore, India</span>
+                <span class="journey-period-modern">Oct 2006 - Dec 2010</span>
+                <span class="journey-gpa">GPA: 3.3 / 4.0 (WES)</span>
+              </div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">
+                Comprehensive undergraduate training in biomedical sciences, clinical practice, 
+                and public health. Built a strong foundation in healthcare delivery and patient care, 
+                later integrating data science approaches to analyze outcomes and inform prevention strategies.
+              </p>
+              <button class="read-more-btn-modern" data-target="journey-4">
+                <span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+              <div class="journey-details-modern" id="journey-4">
+                <div class="details-content">
+                  <p><strong>Key Highlights & Works:</strong></p>
+                  <ul class="details-list">
+                    <li><strong>Healthcare Domain Mastery:</strong> Gained expertise across general medicine, pathology, surgery, and community dentistry, grounding me in holistic patient care and health systems knowledge.</li>
+                    <li><strong>Applied Data Analytics:</strong> Conducted statistical studies (Chi-square, ANOVA, logistic regression) on >2,000 patient records to evaluate treatment outcomes, oral disease risk factors, and links to socioeconomic, hygiene, and diet variables.</li>
+                    <li><strong>Community Dentistry & Outreach:</strong> Designed and executed preventive programs, integrating screenings with data-driven analyses that improved treatment adherence and access to care in underserved populations.</li>
+                  </ul>
+
+                  <p><strong>Coursework:</strong></p>
+                  <p>
+                    General Anatomy & Physiology, Dental Materials, Pathology & Microbiology, 
+                    Dental Pharmacology, Oral Anatomy & Histology, General Medicine & Surgery, 
+                    Oral Pathology, Community Dentistry, Prosthodontics, Endodontics, 
+                    Oral Surgery & Anesthesia, Periodontics, Orthodontics, Pedodontics, 
+                    Oral Medicine & Radiology.
+                  </p>
+
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Clinical Training</span>
+                    <span class="achievement-tag">Healthcare Systems</span>
+                    <span class="achievement-tag">Data Analytics</span>
+                    <span class="achievement-tag">Public Health</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industry Experience Column -->
+      <div class="journey-column journey-right">
+        <h3 class="journey-column-title">Industry Experience</h3>
+        
+        <!-- Industry Item 1: Senior Data Analyst -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">Senior Data Analyst</h4>
+              <div class="journey-meta">
+                <span class="journey-institution">Indiana University - NIH CIMDAR-HIVE Program</span>
+                <span class="journey-period-modern">Aug 2025 - Present</span>
+              </div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">
+                Contributing to NIH-funded multimodal health data science initiatives, developing reproducible pipelines and benchmarking workflows for sepsis prediction, clinical time-series forecasting, and speech-based disease detection — advancing biomedical informatics through applied AI methods.
+              </p>
+              <button class="read-more-btn-modern" data-target="journey-1">
+                <span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+              <div class="journey-details-modern" id="journey-1">
+                <div class="details-content">
+                  <ul class="details-list">
+                    <ul class="details-list">
+                      <li><strong>Sepsis Forecasting:</strong> Designed and validated pipelines on the MIMIC-IV ICU dataset (>70,000 admissions), benchmarking traditional forecasting methods against deep learning architectures, delivering clinically interpretable and reliable models for early sepsis detection.</li>
+                      <li><strong>Speech-Based Biomarkers:</strong> Built reproducible workflows on the NIH Bridge2AI Voice dataset, applying LSTMs and Transformer models to MFCC time-series for Parkinson’s detection; established a scalable benchmarking framework for future speech-driven disease studies.</li>
+                      <li><strong>Postoperative Delirium Study:</strong> Developed recall-optimized predictive models using >70M anesthesia records, engineering novel hemodynamic and anesthetic exposure features to support early delirium risk identification and clinical decision support.</li>
+                      <li><strong>Training & Equity:</strong> Created applied datathon assets for HBCUs/MSIs, embedding fairness and bias-check methods into time-series pipelines to promote equitable AI adoption in clinical and public health research.</li>
+                    </ul>
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Clinical Forecasting</span>
+                    <span class="achievement-tag">Deep Learning</span>
+                    <span class="achievement-tag">Health Equity</span>
+                    <span class="achievement-tag">Multimodal Data</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Industry Item 2: Public Health Informatics Fellow -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">Public Health Informatics Fellow</h4>
+              <div class="journey-meta"><span class="journey-institution">US Centers for Disease Control and Prevention (CDC)</span><span class="journey-period-modern">Aug 2024 - Jul 2025</span></div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">At CDC’s Mycotic Diseases Branch, I engineered national-scale informatics systems that modernized fungal surveillance, automated data stewardship, and advanced AI evaluation. My work combined deep technical skill (Python, SQL, Palantir Foundry, GPT-4, R, geocoding) with measurable public health impact, directly strengthening outbreak response and national data infrastructure.</p>
+              <button class="read-more-btn-modern" data-target="journey-2"><span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="journey-details-modern" id="journey-2">
+                <div class="details-content">
+                  <ul class="details-list">
+                    <li><strong>FungiSurv Infrastructure:</strong> Built AI-assisted ingestion→validation→integration pipelines in Palantir Foundry. Embedded GPT-4 schema mapping, Python/JSON transforms, and version control - cutting manual effort by ~60% and onboarding states faster with reproducible, auditable datasets.</li>
+                    <li><strong>Facility Matching & Geocoding:</strong> Developed semi-automated facility linkage with SQL string-distance methods and CMS/NPI registries, combined with geocoding. Delivered higher-confidence matches and spatial precision for antimicrobial resistance surveillance.</li>
+                    <li><strong>NNDSS ODSE Mining:</strong> Engineered dynamic SQL search across >200 relational tables to recover missing Candida auris case elements and align outputs with HL7 v2. Improved completeness, interoperability, and readiness for modernized reporting.</li>
+                    <li><strong>FORT Outbreak Tracker:</strong> Enhanced CDC’s outbreak dashboard with filters, exports (CSV/Excel/PDF), and new Donor-Derived Infection entities. Gave epidemiologists faster, easier access to 200k+ outbreak records - enabling quicker nationwide response.</li>
+                    <li><strong>DAART JSON Workflow:</strong> Replaced contractor-built logic with an in-house Python pipeline that flattens, cleans, pivots, and auto-publishes JSON data for Data for Action on Antimicrobial Resistance Threats (DAART). Fully automated scheduling triggers, QA-ready datasets, and scalable workflows for future production migration.</li>
+                    <li><strong>Daily Data Stewardship:</strong> Served as primary data steward monitoring 1CDP pipelines for build, schedule, and data-health failures. Diagnosed root causes, deployed Python/R fixes, and implemented proactive validation checks - ensuring continuity, preventing downtime, and preserving data trustworthiness.</li>
+                    <li><strong>Branch Capacity Building:</strong> Led GitLab support tracker for technical requests (Python, SQL, Foundry), and delivered live training sessions on 1 CDC Data Platform (1CDP) tools (Pipeline Builder, Data Lineage). Directly upskilled MDB staff and strengthened internal independence in informatics.</li>
+                    <li><strong>AI Tiger Team (Core Contributor):</strong> Designed and tested 2,556 GPT-4 prompts across six public health domains, ran evaluations with OpenAI’s o3 model, and co-authored analyses showing AI’s value in rapid research synthesis and planning. Manuscript in progress.</li>
+                    <li><strong>Awards & Recognition:</strong> Honored as a CDC <em>AI Champion</em> with the Generative AI Early Adopter Badge. Elected Executive Co-Chair of the CDC Fellows Collective, contributing to strategy and professional development across the agency.</li>
+                  </ul>
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Nationwide Surveillance</span>
+                    <span class="achievement-tag">AI-Driven Informatics</span>
+                    <span class="achievement-tag">SQL & Data Engineering</span>
+                    <span class="achievement-tag">Pipeline Reliability</span>
+                    <span class="achievement-tag">Palantir Foundry</span>
+                    <span class="achievement-tag">Public Health Impact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Item 3: Research Assistant, Dept. of Anesthesiology -->
+        <div class="journey-item-dual fade-in">
+          <div class="journey-dot-dual" aria-hidden="true"></div>
+          <div class="journey-card-modern">
+            <div class="journey-card-header">
+              <h4 class="journey-title-modern">Research Assistant, Dept. of Anesthesiology</h4>
+              <div class="journey-meta"><span class="journey-institution">Indiana University School of Medicine</span><span class="journey-period-modern">Jan 2024 - May 2024</span></div>
+            </div>
+            <div class="journey-card-content">
+              <p class="journey-summary">Conducted advanced perioperative analytics, engineering novel hemodynamic features from intraoperative MAP time-series to uncover mortality risk signatures and inform clinical decision-making.</p>
+              <button class="read-more-btn-modern" data-target="journey-3"><span>Read More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="journey-details-modern" id="journey-3">
+                <div class="details-content">
+                  <ul class="details-list">
+                    <li><strong>Hemodynamic Feature Engineering:</strong> Extracted 42 novel features (variability, entropy, changepoints, Poincaré metrics) from 10+ years of intraoperative MAP series covering noncardiac, non-obstetric surgeries.</li>
+                    <li><strong>Advanced Time-Series Methods:</strong> Applied changepoint detection (PELT-Pruned Exact Linear Time) algorithm, dynamic time warping, and complexity analysis to characterize instability patterns predictive of 30-day mortality.</li>
+                    <li><strong>Predictive Modeling:</strong> Integrated 20 statistically significant predictors into logistic regression and survival models, highlighting dynamic MAP instability as critical risk markers.</li>
+                    <li><strong>Scientific Impact:</strong> Findings accepted for presentation at American Medical Informatics Association 2024 conference, strengthening evidence for novel intraoperative risk indicators and their role in clinical mortality prediction models.</li>
+                  </ul>
+                  <div class="journey-achievements">
+                    <span class="achievement-tag">Time-Series Analytics</span>
+                    <span class="achievement-tag">Change Point Detection</span>
+                    <span class="achievement-tag">Pruned Exact Linear Time</span>
+                    <span class="achievement-tag">L1 Regularization</span>
+                    <span class="achievement-tag">Survival Analysis</span>
+                    <span class="achievement-tag">Clinical Informatics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Technical Skills">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Expertise</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Biomedical data science • anesthesiology analytics • reproducible AI pipelines</p>
+    </div>
+
+    <div class="skills-showcase">
+
+      <!-- Programming & Data Engineering -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Programming & Data Engineering</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Python</span> <span class="skill-name-sub">(pandas, NumPy, PySpark, scikit-learn, PyTorch)</span></span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">R</span> <span class="skill-name-sub">(tidyverse, caret, ggplot2, stats)</span></span>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">SQL</span> <span class="skill-name-sub">(T-SQL, PostgreSQL, Snowflake)</span></span>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Data Pipelines & APIs</span> <span class="skill-name-sub">(ETL/ELT, REST, JSON, Foundry Pipeline Builder)</span></span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Data Ops & Versioning</span> <span class="skill-name-sub">(lineage, QA, scheduling, reproducibility)</span></span>
+              <span class="skill-percentage">87%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:87%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistical Modeling & Machine Learning -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Statistical Modeling & Machine Learning</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Classical Statistics</span> <span class="skill-name-sub">(parametric/non-parametric, ANOVA, χ², t-tests, regression)</span></span>
+              <span class="skill-percentage">91%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:91%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Predictive Modeling</span> <span class="skill-name-sub">(Logit, RF, XGBoost, CatBoost, L1/L2 regularization)</span></span>
+              <span class="skill-percentage">93%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:93%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Time-Series & Physiologic Signals</span> <span class="skill-name-sub">(ARIMA, Prophet, LSTM, TFT, Poincaré, entropy)</span></span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Biostatistics</span> <span class="skill-name-sub">(survival, calibration, PELT changepoints, mixed models)</span></span>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Explainability & Model Evaluation</span> <span class="skill-name-sub">(SHAP, permutation, bias/fairness metrics)</span></span>
+              <span class="skill-percentage">84%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:84%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Healthcare & Clinical Informatics -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Healthcare & Clinical Informatics</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Clinical Data Standards</span> <span class="skill-name-sub">(HL7 v2, ICD-10, LOINC, SNOMED, FHIR)</span></span>
+              <span class="skill-percentage">86%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:86%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">EHR & Clinical Analytics</span> <span class="skill-name-sub">(perioperative, sepsis, delirium, outcomes)</span></span>
+              <span class="skill-percentage">91%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:91%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Public Health Informatics</span> <span class="skill-name-sub">(surveillance, DCIPHER, NNDSS ODSE, FungiSurv)</span></span>
+              <span class="skill-percentage">89%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:89%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Data Governance & Quality</span> <span class="skill-name-sub">(auditability, provenance, reproducibility)</span></span>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imaging, Signals & Text Analytics -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Imaging, Signals & Text Analytics</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Medical Imaging</span> <span class="skill-name-sub">(DICOM, OHIF, DICOM-SR, segmentation)</span></span>
+              <span class="skill-percentage">82%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Physiologic Monitoring</span> <span class="skill-name-sub">(MAP, ECG, pulse, variability, entropy)</span></span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Speech & Voice Analysis</span> <span class="skill-name-sub">(MFCCs, LSTM, Transformers)</span></span>
+              <span class="skill-percentage">82%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Natural Language Processing</span> <span class="skill-name-sub">(clinical text, embeddings, topic models)</span></span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reproducibility, Infrastructure & Tools -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Reproducibility, Infrastructure & Tools</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Version Control</span> <span class="skill-name-sub">(Git, GitLab, CI/CD, documentation)</span></span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Model Deployment & MLOps</span> <span class="skill-name-sub">(Docker, APIs, reproducible pipelines)</span></span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Palantir Foundry / 1CDP</span> <span class="skill-name-sub">(Workshop, transforms, data health)</span></span>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Cloud & Compute</span> <span class="skill-name-sub">(AWS EC2/S3, GCP, HPC clusters)</span></span>
+              <span class="skill-percentage">78%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:78%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visualization & Scientific Communication -->
+      <div class="card fade-in">
+        <div class="skill-category-header">
+          <h3 style="color:var(--accent-purple);margin-bottom:1.5rem;font-size:1.3rem;">Visualization & Scientific Communication</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Data Visualization</span> <span class="skill-name-sub">(Tableau, Power BI, Plotly, Matplotlib)</span></span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Manuscript-Ready Reporting</span> <span class="skill-name-sub">(figures, dashboards, reproducible notebooks)</span></span>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="skill-name-main">Collaboration & Communication</span> <span class="skill-name-sub">(interdisciplinary teams, PIs, clinicians)</span></span>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:92%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" aria-label="Certifications">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Validations across Analytics, AI, and Clinical Research</p>
+        </div>
+
+        <div class="cert-grid" id="certGrid">
+          <!-- visible 3 -->
+          <div class="cert-card card fade-in cert-visible">
+          <div class="cert-image"><img src="./images/certifications/CDC_AI_Champion_Cert_Shikhar.jpg" alt="CDC AI Excellence certificate thumbnail" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">AI Excellence</h3>
+              <p class="cert-issuer">US Centers for Disease Control and Prevention</p>
+              <p class="cert-date">2025</p>
+              <a href="./documents/certifications/Shikhar_CDC_AI_Excellence_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image"><img src="./images/certifications/palantir_cert.png" alt="Palantir Certificate" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Foundry and AIP Builder Foundations</h3>
+              <p class="cert-issuer">Palantir Technologies</p>
+              <p class="cert-date">2024</p>
+              <a href="./documents/certifications/Shikhar_Palantir_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>          
+
+          <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image"><img src="./images/certifications/ACCME_ACPE_ANCC_CME.png" alt="CME Credits" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">CDC Epidemic Intelligence Service (EIS) Conference 2025 - CME Credits (ACCME, ACPE, ANCC)</h3>
+              <p class="cert-issuer">U.S. Centers for Disease Control and Prevention (CDC)</p>
+              <p class="cert-date">2025</p>
+              <a href="./documents/certifications/cme.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificates</a>
+            </div>
+          </div>
+
+          <div class="cert-card card fade-in cert-visible">
+            <div class="cert-image">
+              <img src="./images/certifications/NASA_open_science.png" alt="NASA Open Science 101 Badge" loading="lazy" />
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">NASA Open Science 101</h3>
+              <p class="cert-issuer">Issued by NASA Open Science</p>
+              <p class="cert-date">2024</p>
+              <a href="https://www.credly.com/badges/9626b817-60ac-4792-8659-c7bcc2969785" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="cert-link-button">View Badge</a>
+            </div>
+          </div>
+
+          <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image"><img src="./images/certifications/cbms.png" alt="IEEE CBMS 2024 Conference" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Author - IEEE CBMS 2024 Conference (Peer-Reviewed Paper)</h3>
+              <p class="cert-issuer">IEEE Computer-Based Medical Systems (CBMS), Guadalajara, Mexico</p>
+              <p class="cert-date">2024</p>
+              <a href="./documents/certifications/CBMS_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificates</a>
+            </div>
+          </div>
+
+            <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image">
+              <img src="./images/certifications/ANSI_IACET_CEU.png" alt="ANSI IACET CEU cert" loading="lazy" />
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">CDC EIS Conference 2025 - Continuing Education Units (ANSI/IACET Accredited)</h3>
+              <p class="cert-issuer">U.S. Centers for Disease Control and Prevention (CDC)</p>
+              <p class="cert-date">2025</p>
+              <a href="./documents/certifications/ceu.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card card fade-in cert-visible">
+            <div class="cert-image"><img src="./images/certifications/citi_biomedR.png" alt="citi_biomedR" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Biomedical Responsible Conduct of Research</h3>
+              <p class="cert-issuer">CITI Program</p>
+              <p class="cert-date">2023</p>
+              <a href="./documents/certifications/citiCompletionCertificate_Biomed_RCR.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>
+
+          <!-- hidden others -->
+    <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image"><img src="./images/certifications/biomed_researcher.png" alt="Biomedical Researcher" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Human Research - Biomedical Researcher</h3>
+              <p class="cert-issuer">CITI Program</p>
+              <p class="cert-date">2022</p>
+              <a href="./documents/certifications/citiCompletionCertificate_BioMedical.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card card fade-in cert-hidden">
+            <div class="cert-image"><img src="./images/certifications/citi_BPCR.png" alt="GCP – Social and Behavioral Research Best Practices for Clinical Research" loading="lazy" /></div>
+            <div class="cert-content">
+              <h3 class="cert-title">GCP – Social and Behavioral Research Best Practices for Clinical Research</h3>
+              <p class="cert-issuer">CITI Program</p>
+              <p class="cert-date">2023</p>
+              <a href="./documents/certifications/citiCompletionCertificate_GCP.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-button">View Certificate</a>
+            </div>
+          </div>
+
+
+       <div class="cert-button-container">
+  <button id="viewAllCertsBtn" class="btn btn-secondary">
+            <span id="certBtnText">View All Certifications</span>
+            <svg id="certBtnIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  <!--Publications and Abstracts -->
+<!-- PUBLICATIONS & ABSTRACTS -->
+<section id="beyond" aria-label="Publications & Abstracts">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Research</span>
+      <h2 class="section-title">Publications & Abstracts</h2>
+      <p class="section-subtitle">Peer-reviewed papers, conference abstracts, and ongoing manuscripts in biomedical informatics & applied AI</p>
+    </div>
+
+    <div class="interests-grid">
+      <!-- Card 1: AIME (Springer LNCS) -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/AIME_ss.png" alt="AIME 2023 Paper" loading="lazy" />
+        </div>
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem">A General-Purpose AI Assistant Embedded in an Open-Source Radiology Information System</h3>
+        <p style="color:var(--text-secondary)">
+          <strong>AIME 2023 (Springer LNCS)</strong> Author. Integrated an AI assistant into LibreHealth RIS with OHIF/DICOM-SR for in-workflow annotation, active learning, and few-shot retraining.
+        </p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-34344-5_46" target="_blank" rel="noopener noreferrer" class="interest-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
+            </svg>
+            <span>View Paper</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: IEEE CBMS 2024 -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/IEEE_SS.png" alt="IEEE CBMS 2024" loading="lazy" />
+        </div>
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem">Interpolating and Forecasting Wound Trajectory using Machine Learning Approaches</h3>
+        <p style="color:var(--text-secondary)">
+          <strong>IEEE CBMS 2024</strong> Author. Built a forecasting pipeline (imputation + Prophet/LSTM/BiLSTM) for chronic wound healing trajectories using registry data.
+        </p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://www.computer.org/csdl/proceedings-article/cbms/2024/847200a146/1YRNmeThIBO" target="_blank" rel="noopener noreferrer" class="interest-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
+            </svg>
+            <span>View Paper</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: AMIA 2024 Poster -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/AMIA.png" alt="AMIA 2024 Poster" loading="lazy" />
+        </div>
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem">Intraoperative MAP Time-Series Features Predictive of 30-Day Mortality</h3>
+        <p style="color:var(--text-secondary)">
+          <strong>AMIA Annual Symposium 2024</strong> Accepted poster. Engineered entropy, changepoints (PELT), and variability features to characterize hemodynamic instability linked to outcomes.
+        </p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://amia.secure-platform.com/symposium/gallery/rounds/82001/details/11521" target="_blank" rel="noopener noreferrer" class="interest-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
+            </svg>
+            <span>View Abstract</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: DHIS2 + OpenCPU -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/dhis2.jpg" alt="DHIS2 + OpenCPU" loading="lazy" />
+        </div>
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem">Enabling Data-Driven Exploration: DHIS2 + OpenCPU for In-Platform Statistics</h3>
+        <p style="color:var(--text-secondary)">
+          <strong>DHIS2 Annual Conference 2024</strong> Primary author. Delivered secure, in-app statistical testing within DHIS2 via OpenCPU, eliminating manual exports and improving reproducibility.
+        </p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://community.dhis2.org/t/enabling-data-driven-exploration-a-novel-integration-of-dhis2-and-opencpu-for-statistical-analysis-within-an-interactive-application/58089" target="_blank" rel="noopener noreferrer" class="interest-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
+            </svg>
+            <span>View Abstract</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5: DHIS2 Public Health (US) -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/dhis21.jpg" alt="DHIS2 US Community Health" loading="lazy" />
+        </div>
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem">DHIS2 for U.S. Community & Public Health Management</h3>
+        <p style="color:var(--text-secondary)">
+          <strong>DHIS2 Annual Conference 2024</strong> Author. Demonstrated adaptation of DHIS2 for U.S. community health: surveillance, case management, and reporting pipelines.
+        </p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://community.dhis2.org/t/dhis2-for-u-s-community-public-health-management/64841" target="_blank" rel="noopener noreferrer" class="interest-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
+            </svg>
+            <span>View Abstract</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Optional: Working Papers (single card linking to a subpage or note) -->
+      <!-- Card: Working Papers -->
+      <div class="interest-card card fade-in">
+        <div class="interest-image">
+          <img src="./images/working.png" alt="Working Papers" loading="lazy" />
+        </div>
+
+        <h3 style="color:var(--accent-purple);margin-bottom:1rem;">Working Papers (In Preparation)</h3>
+
+        <div class="scrollable-content">
+          <ul class="pub-list" role="list"></ul>
+            <li>
+              <strong>Evaluation of OpenAI “Deep Research” for Public Health</strong> - CDC AI Tiger Team (Core Contributor). 
+              Designed and refined <strong>2,556 prompts</strong> across six domains (Research, Planning, Epidemiology, Communications, Policy, Legal); 
+              executed and troubleshot runs with OpenAI’s <strong>o3 Deep Research</strong>; supported prompt iteration, results capture, and analysis. 
+              From <strong>207</strong> prompts executed, <strong>195</strong> AI-generated reports were evaluated by <strong>61 SMEs</strong> against <strong>10 criteria</strong>, 
+              demonstrating promise for rapid literature review, communications, and strategic planning. <em>Manuscript in preparation.</em>
+            </li>       
+            <li>
+              <strong>Modeling Postoperative Delirium Risk</strong> - Indiana University School of Medicine.  
+              Machine learning on perioperative EHR and intraoperative MAP time-series to identify physiologic signatures predictive of delirium.
+            </li>
+            <li>
+              <strong>Outcome Analysis of Therapeutic Intraoperative Interventions</strong>  
+              Retrospective study quantifying associations between vasopressor/antihypertensive use, intraoperative hypotension/hypertension, and postoperative mortality risk.
+            </li>
+          </ul>
+
+        <div style="margin-top:1.25rem;">
+          <a class="interest-button" style="pointer-events:none;opacity:.7;">
+            <span>Manuscripts in preparation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" aria-label="Leadership">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Leadership</span>
+      <h2 class="section-title">Leadership & Service</h2>
+      <p class="section-subtitle">Elected, technical, and program leadership across public health, research, and clinical practice</p>
+    </div>
+
+    <div class="leadership-grid">
+      <!-- 1) CDC Fellows Collective -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Executive Co-Chair, Fellows Collective</h3>
+          <div class="lead-meta"><span class="lead-org">U.S. Centers for Disease Control and Prevention</span> · <span>2025–2026</span></div>
+        </header>
+        <p class="lead-summary">Elected to represent CDC fellows agency-wide; co-led strategy, programming, and professional development to strengthen early-career scientific impact.</p>
+        <ul class="lead-points">
+          <li>Coordinated cross-center initiatives, mentorship, and skills programming.</li>
+          <li>Advocated for equitable access to training, tools, and research opportunities.</li>
+        </ul>
+        <div class="lead-tags"><span class="lead-tag">Governance</span><span class="lead-tag">Strategy</span><span class="lead-tag">Mentorship</span></div>
+      </article>
+
+      <!-- 2) Clinic Director & Head Dentist -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Clinic Director & Head Dentist</h3>
+          <div class="lead-meta"><span class="lead-org">Family Dental Clinic, India</span> · <span>2013–2022</span></div>
+        </header>
+        <p class="lead-summary">Directed operations across two practices; led clinical quality, training, and outreach while introducing analytics to improve outcomes and access.</p>
+        <ul class="lead-points">
+          <li>Trained junior clinicians; standardized workflows and safety protocols.</li>
+          <li>Launched community screening programs informed by data analysis.</li>
+        </ul>
+        <div class="lead-tags"><span class="lead-tag">People Ops</span><span class="lead-tag">Quality</span><span class="lead-tag">Community Health</span></div>
+      </article>
+
+            <!-- Informatics Lead – FungiSurv AI Schema Mapping -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Informatics Lead - FungiSurv AI Schema Mapping</h3>
+          <div class="lead-meta"><span class="lead-org">CDC Mycotic Diseases Branch</span> · <span>2024–2025</span></div>
+        </header>
+
+        <div class="lead-body scrollable-lead">
+          <p class="lead-summary">Led development of an <strong>LLM-assisted schema mapping system</strong></p>
+          <ul class="lead-points">
+            <li>Architected a modular system with <strong>frontend upload</strong>, <strong>AI-assisted mapping</strong>, and <strong>human-in-the-loop review</strong>.</li>
+            <li>Developed <strong>Python-based</strong> transforms and logging in 1CDP.</li>
+            <li>Engineered <strong>structured JSON prompts</strong> for consistent outputs.</li>
+            <li>Implemented <strong>versioning</strong>, edit/review panels, and rollback.</li>
+            <li>Tested <strong>chunking</strong> & validation strategies for token limits.</li>
+          </ul>
+          <p class="lead-summary">Combines AI innovation with reproducible informatics engineering …</p>
+        </div>
+
+        <div class="lead-tags">
+          <span class="lead-tag">AI Integration</span><span class="lead-tag">Public Health Informatics</span>
+          <span class="lead-tag">Foundry</span><span class="lead-tag">GPT-4</span>
+        </div>
+      </article>
+
+      <!-- 6) Project Lead – Fungal Outbreak Response Tracker (FORT) -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Informatics Lead - Fungal Outbreak Response Tracker Tool (FORT)</h3>
+          <div class="lead-meta">
+            <span class="lead-org">CDC Mycotic Diseases Branch</span> · <span>2024–2025</span>
+          </div>
+        </header>
+
+        <!-- Scrollable body starts here -->
+        <div class="lead-body scrollable-lead">
+          <p class="lead-summary">
+            Led continuous enhancement of the <strong>Fungal Outbreak Response Tracker (FORT)</strong> - a national Palantir Foundry-based tool supporting real-time documentation, monitoring, and management of fungal outbreak responses. Delivered iterative improvements that enhanced usability, efficiency, and epidemiologic alignment.
+          </p>
+          <ul class="lead-points">
+            <li>Debugged and optimized <strong>filter logic and object-table sync</strong> for accurate data querying.</li>
+            <li>Added <strong>Active/Closed status columns</strong> and advanced filtering by pathogen, time, and location.</li>
+            <li>Implemented <strong>toggle controls</strong> for rapid response closure and re-opening within object cards.</li>
+            <li>Enabled <strong>PDF and Excel export</strong> for 200k+ outbreak records, improving reporting efficiency.</li>
+            <li>Expanded support for <strong>Donor-Derived Infection (DDI)</strong> tracking with conditional form logic.</li>
+          </ul>
+          <p class="lead-summary" style="margin-top:.75rem;">
+            Practiced Agile, user-centric development with MDB epidemiologists, delivering small, testable updates informed by field feedback. Each iteration was documentation-driven and compliant with 1CDP Workshop standards.
+          </p>
+        </div>
+        <!-- Scrollable body ends here -->
+
+        <div class="lead-tags">
+          <span class="lead-tag">Product Leadership</span>
+          <span class="lead-tag">Agile Delivery</span>
+          <span class="lead-tag">UX for Epi</span>
+          <span class="lead-tag">Public Health Impact</span>
+        </div>
+      </article>
+
+
+
+      <!-- 3) Daily Data Stewardship -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title"> Data Steward - Pipeline Reliability & Data Health</h3>
+          <div class="lead-meta"><span class="lead-org">CDC Mycotic Diseases Branch</span> · <span>2024–2025</span></div>
+        </header>
+        <p class="lead-summary">Serve as data steward ensuring uninterrupted operation, validation, and quality of surveillance pipelines, critical to maintaining national data integrity and reliability.</p>
+        <ul class="lead-points">
+          <li>Monitor and troubleshoot build, schedule, and data health failures daily.</li>
+          <li>Perform root-cause analyses for logic, data, or platform-level errors.</li>
+          <li>Implement proactive validations to detect schema drift and missing fields.</li>
+          <li>Reduce downtime and manual triage through systematic pipeline improvements.</li>
+        </ul>
+        <div class="lead-tags"><span class="lead-tag">Data Reliability</span><span class="lead-tag">Stewardship</span><span class="lead-tag">Foundry</span><span class="lead-tag">Monitoring</span></div>
+      </article>
+
+      <!-- 4) Organizer & Trainer – MDB Data Huddle -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Organizer & Trainer - “Data Huddle”</h3>
+          <div class="lead-meta"><span class="lead-org">CDC Mycotic Diseases Branch</span> · <span>2024–2025</span></div>
+        </header>
+        <p class="lead-summary">Designed and led hands-on sessions to upskill epidemiologists and analysts in Palantir Foundry (1CDP) tools, pipeline troubleshooting, and data lineage.</p>
+        <ul class="lead-points">
+          <li>Delivered live demos; built internal know-how.</li>
+          <li>Standardized guidance via GitLab tracker for branch-wide requests.</li>
+        </ul>
+        <div class="lead-tags"><span class="lead-tag">Enablement</span><span class="lead-tag">Training</span><span class="lead-tag">Tooling</span></div>
+      </article>
+
+      <!-- 5) Program Co-Designer – HBCU/MSI Datathons -->
+      <article class="lead-card fade-in">
+        <header class="lead-header">
+          <h3 class="lead-title">Program Co-Designer - HBCU/MSI Datathons</h3>
+          <div class="lead-meta"><span class="lead-org">NIH CIMDAR-HIVE (Indiana University)</span> · <span>2025–Present</span></div>
+        </header>
+        <p class="lead-summary">Co-built datathon notebooks and benchmarking assets spanning ICU time-series and speech biomarkers, embedding fairness and reproducibility.</p>
+        <ul class="lead-points">
+          <li>Packaged datasets, scoring, and baseline models for applied learning.</li>
+          <li>Integrated bias checks and documentation to promote equitable AI.</li>
+        </ul>
+        <div class="lead-tags"><span class="lead-tag">Education</span><span class="lead-tag">Reproducibility</span><span class="lead-tag">Fairness</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+<section id="contact" aria-label="Contact Information">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Connect</span>
+      <h2 class="section-title">Let's Collaborate</h2>
+      <p class="section-subtitle">Open to collaborations and career opportunities at the intersection of AI, health data science, and clinical research.</p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Cards - Modern Compact Design -->
+      <div class="contact-cards-modern">
+        <div class="contact-card-modern fade-in">
+          <div class="contact-icon-modern">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info-modern">
+            <h3 class="contact-label-modern">Email</h3>
+            <a href="mailto:shikharshuklams@gmail.com" class="contact-link-modern">shikharshuklams@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card-modern fade-in">
+          <div class="contact-icon-modern">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div class="contact-info-modern">
+            <h3 class="contact-label-modern">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/shikharshukla1/" target="_blank" rel="noopener noreferrer" class="contact-link-modern">linkedin.com/in/shikharshukla1</a>
+          </div>
+        </div>
+
+        <div class="contact-card-modern fade-in">
+          <div class="contact-icon-modern">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </div>
+          <div class="contact-info-modern">
+            <h3 class="contact-label-modern">GitHub</h3>
+            <a href="https://github.com/Amorfati123" target="_blank" rel="noopener noreferrer" class="contact-link-modern">github.com/shukla-shikhar</a>
+          </div>
+        </div>
+
+        <div class="contact-card-modern fade-in">
+          <div class="contact-icon-modern">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="contact-info-modern">
+            <h3 class="contact-label-modern">Location</h3>
+            <span class="contact-text-modern">United States</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form - Unchanged Functionality -->
+      <div class="contact-form-modern card fade-in">
+        <h3 class="contact-form-title">Send a Message</h3>
+
+        <form id="contactForm" action="https://formspree.io/f/mnnbadpg" method="POST" novalidate>
+          <input type="text" name="_gotcha" style="display:none!important" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Portfolio Contact - Shikhar Shukla">
+          <input type="hidden" name="_next" value="#contact">
+          <input type="hidden" name="_autoresponse" value="Thanks for your message! I'll get back to you soon.">
+
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name *</label>
+            <input class="input" id="name" name="name" type="text" placeholder="Enter your full name" required minlength="2" maxlength="100" autocomplete="name" />
+            <div class="form-error" id="nameError"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Your Email *</label>
+            <input class="input" id="email" name="email" type="email" placeholder="your.email@example.com" required maxlength="100" autocomplete="email" />
+            <div class="form-error" id="emailError"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject *</label>
+            <input class="input" id="subject" name="subject" type="text" placeholder="What's this about?" required minlength="3" maxlength="150" />
+            <div class="form-error" id="subjectError"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message *</label>
+            <textarea class="textarea" id="message" name="message" placeholder="Tell me about your project or opportunity..." required minlength="10" maxlength="2000" rows="6"></textarea>
+            <div class="form-error" id="messageError"></div>
+            <div class="char-counter" id="charCounter">0 / 2000 characters</div>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="submitText">Send Message</span>
+            <span class="btn-loader" id="btnLoader" style="display:none"><span class="spinner" aria-hidden="true"></span>Sending…</span>
+          </button>
+
+          <div id="formNote" class="form-note" aria-live="polite" style="display:none"></div>
+          <div id="sessionLimit" class="session-limit-notice" style="display:none"></div>
+        </form>
+
+        <div id="successMessage" class="success-message">
+          <div class="success-content">
+            <div class="success-icon">✅</div>
+            <h4>Message Sent Successfully!</h4>
+            <p>Thanks for reaching out. I'll get back to you shortly.</p>
+            <div class="success-actions" style="display:flex;flex-direction:column;gap:.6rem">
+              <a href="mailto:shikharshuklams@gmail.com" class="fallback-link">Email Me</a>
+              <a href="https://www.linkedin.com/in/shikharshukla1/" target="_blank" rel="noopener" class="fallback-link">Connect on LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer style="text-align:center;padding:3rem 2rem;color:var(--text-muted);border-top:1px solid var(--border-color);background:var(--bg-secondary)">
+    <div class="container">
+      <p style="margin-bottom:1rem;font-size:1rem">© 2025 Shikhar Shukla. Crafted with a passion for data science, reproducible research, and collaborative innovation.</p>
+      <p style="font-size:.9rem;opacity:.85">Reproducible • Scalable • Impactful</p>
+    </div>
+  </footer>
+
+<script>
+  // ==== JAVASCRIPT //
+(() => {
+  'use strict';
+
+  // ==== Utilities (null-safe roots; tiny but important hardening) ====
+  const $  = (sel, root) => (root || document).querySelector(sel);
+  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+
+  // ==== State / Constants ====
+  const state = { formSubmitting: false };
+  const VISIBLE_PROJECTS = 2;
+  const VISIBLE_CERTS    = 3;
+  const prefersReduced   = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
+
+  // Ensure we start at the top (your design expects this)
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+
+// Escape key loader cancellation
+let loaderActive = true;
+let loaderTimeout;
+
+function handleEscapeKey(event) {
+  if (event.key === 'Escape' && loaderActive) {
+    // Cancel the loader timeout
+    if (loaderTimeout) {
+      clearTimeout(loaderTimeout);
+    }
+    
+    // Hide loader immediately
+    const loaderOverlay = $('#loaderOverlay');
+    if (loaderOverlay) {
+      loaderOverlay.classList.add('hidden');
+    }
+    
+    // Initialize website
+    initializeAll();
+    
+    // Mark loader as inactive
+    loaderActive = false;
+    
+    // Remove event listener
+    document.removeEventListener('keydown', handleEscapeKey);
+  }
+}
+
+// ==== Boot ====
+window.addEventListener('load', () => {
+  const loaderOverlay = $('#loaderOverlay');
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  
+  
+  // Desktop loader behavior (unchanged)
+  if (loaderOverlay) {
+    // Add escape key listener
+    document.addEventListener('keydown', handleEscapeKey);
+    
+    // Store timeout reference for cancellation
+    loaderTimeout = setTimeout(() => {
+      loaderOverlay.classList.add('hidden');
+      initializeAll();
+      loaderActive = false;
+      document.removeEventListener('keydown', handleEscapeKey);
+    }, 4000);
+  } else {
+    initializeAll();
+  }
+});
+
+function initializeAll() {
+  initTheme();
+  initNavigation();
+  initScrollHandling();
+  initAnimations();
+  initInteractions();
+  initContactForm();
+}
+  // ==== Theme ====
+  function initTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const slider = themeToggle ? themeToggle.querySelector('.theme-toggle-slider') : null;
+
+    const apply = (mode) => {
+      document.body.setAttribute('data-theme', mode);
+      if (slider) slider.textContent = mode === 'dark' ? '🌙' : '☀️';
+    };
+
+    // If the user has a saved choice, honor it. Otherwise, default to light.
+    const saved = (() => { try { return localStorage.getItem('theme'); } catch { return null; } })();
+    apply((saved === 'light' || saved === 'dark') ? saved : 'light');
+
+    // Keep the toggle working; save only on user action.
+    themeToggle?.addEventListener('click', () => {
+      const current = document.body.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      apply(next);
+      try { localStorage.setItem('theme', next); } catch {}
+    });
+  }
+
+  // ==== Navigation ====
+  function initNavigation() {
+    const menuToggle = $('#menuToggle');
+    const navLinks   = $('#navLinks');
+    const navbar     = $('.navbar');
+
+    menuToggle?.addEventListener('click', () => {
+      if (!navLinks) return;
+      const isOpen = navLinks.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen) navLinks.querySelector('a')?.focus();
+    });
+
+    $$('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks?.classList.remove('active');
+        menuToggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    initActiveLinks();
+
+    let touchStartY = 0;
+    document.addEventListener('touchstart', e => { touchStartY = e.changedTouches[0].screenY; }, { passive: true });
+    document.addEventListener('touchend',   e => {
+      const delta = e.changedTouches[0].screenY - touchStartY;
+      if (!navbar || Math.abs(delta) < 50) return;
+      if (delta < 0 && window.pageYOffset > 150) navbar.style.transform = 'translateY(-100%)';
+      else if (delta > 0)                       navbar.style.transform = 'translateY(0)';
+    }, { passive: true });
+  }
+
+  function initActiveLinks() {
+    const sections = $$('section[id]');
+    const navItems = $$('.nav-links a');
+    if (!sections.length || !navItems.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = '#' + entry.target.id;
+        navItems.forEach(item => item.classList.toggle('active', item.getAttribute('href') === id));
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: [0, .25, .5, .75, 1] });
+
+    sections.forEach(section => observer.observe(section));
+  }
+
+  // ==== Scroll / Progress / Back-to-top ====
+  function initScrollHandling() {
+    const navbar  = $('.navbar');
+    const bar     = $('#scrollProgress');
+    const topBtn  = $('#scrollToTop');
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        if (navbar) navbar.classList.toggle('scrolled', y > 100);
+
+        if (bar) {
+          const doc = document.documentElement;
+          const pct = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+          bar.style.width = pct + '%';
+        }
+
+        if (topBtn) topBtn.classList.toggle('visible', y > 600);
+        ticking = false;
+      });
+      ticking = true;
+    };
+
+    document.addEventListener('scroll', onScroll, { passive: true });
+
+    topBtn?.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+    });
+  }
+
+  // ==== Animations ====
+  function initAnimations() {
+    initFadeInAnimations();
+    initCounterAnimations();
+  }
+
+  function initFadeInAnimations() {
+    const elements = $$('.fade-in');
+    if (!elements.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    elements.forEach(el => observer.observe(el));
+  }
+
+function initCounterAnimations() {
+  const counters = $$('.stat-number[data-count]');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(({ isIntersecting, target }) => {
+      if (!isIntersecting) return;
+
+      const endValue = parseFloat(target.dataset.count);
+      const suffix = target.dataset.suffix || ''; // Get suffix (like "+")
+      const isFloat = !Number.isInteger(endValue);
+
+      if (prefersReduced) {
+        const finalText = isFloat ? endValue.toFixed(1) : Math.round(endValue);
+        target.textContent = finalText + suffix;
+        observer.unobserve(target);
+        return;
+      }
+
+      const duration = 1600;
+      const startTime = performance.now();
+
+      function tick(now) {
+        const p = Math.min(1, (now - startTime) / duration);
+        const val = endValue * p;
+        const currentText = isFloat ? val.toFixed(1) : Math.round(val);
+        
+        // Add suffix only when animation is complete or nearly complete (95%+)
+        const showSuffix = p >= 0.95 ? suffix : '';
+        target.textContent = currentText + showSuffix;
+        
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      observer.unobserve(target);
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach(c => observer.observe(c));
+}
+
+  // ==== Interactions ====
+  function initInteractions() {
+    initReadMore();
+    initViewAllToggles();
+  }
+
+  function initReadMore() {
+    $$('.read-more-btn-modern').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        if (!targetId) return;
+        const panel = document.getElementById(targetId);
+        if (!panel) return;
+
+        const textSpan = btn.querySelector('span');
+        const isExpanded = panel.classList.toggle('visible');
+        btn.setAttribute('aria-expanded', String(isExpanded));
+        if (textSpan) textSpan.textContent = isExpanded ? 'Hide' : 'Read More';
+      });
+    });
+  }
+
+  function initViewAllToggles() {
+    // Projects
+    const projectsBtn  = $('#viewAllBtn');
+    const projectsGrid = $('#projectsGrid');
+    projectsBtn?.addEventListener('click', () => {
+      toggleViewAll(
+        projectsGrid, '.project-card', 'project-hidden', 'project-visible',
+        VISIBLE_PROJECTS, '#btnText', '#btnIcon',
+        'View All Projects', 'Show Less'
+      );
+    });
+
+    // Certifications
+    const certsBtn = $('#viewAllCertsBtn');
+    const certGrid = $('#certGrid');
+    certsBtn?.addEventListener('click', () => {
+      toggleViewAll(
+        certGrid, '.cert-card', 'cert-hidden', 'cert-visible',
+        VISIBLE_CERTS, '#certBtnText', '#certBtnIcon',
+        'View All Certifications', 'Show Less'
+      );
+    });
+  }
+
+  function toggleViewAll(grid, cardSelector, hiddenClass, visibleClass, visibleCount, textSelector, iconSelector, showText, hideText) {
+    if (!grid) return;
+    const cards = $$(cardSelector, grid);
+    if (!cards.length) return;
+
+    const hasHidden    = cards.some(card => card.classList.contains(hiddenClass));
+    const shouldExpand = hasHidden;
+
+    cards.forEach((card, i) => {
+      if (shouldExpand) {
+        card.classList.remove(hiddenClass);
+        card.classList.add(visibleClass);
+      } else {
+        const keep = i < visibleCount;
+        card.classList.toggle(visibleClass, keep);
+        card.classList.toggle(hiddenClass, !keep);
+      }
+    });
+
+    const btnText = $(textSelector);
+    const btnIcon = $(iconSelector);
+    if (btnText) btnText.textContent = shouldExpand ? hideText : showText;
+    if (btnIcon) btnIcon.style.transform = shouldExpand ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+
+  // ==== Contact Form ====
+  function initContactForm() {
+    const form           = $('#contactForm');
+    const submitBtn      = $('#submitBtn');
+    const submitText     = $('#submitText');
+    const btnLoader      = $('#btnLoader');
+    const successMessage = $('#successMessage');
+    const formNote       = $('#formNote');
+    const charCounter    = $('#charCounter');
+    const messageField   = $('#message');
+
+    if (!form) return;
+
+    messageField?.addEventListener('input', e => {
+      const maxLength = e.target.getAttribute('maxlength') || 2000;
+      if (charCounter) charCounter.textContent = `${e.target.value.length} / ${maxLength} characters`;
+    });
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (state.formSubmitting) return;
+
+      clearFormErrors();
+
+      const formData = {
+        name:   $('#name')   ?.value.trim() || '',
+        email:  $('#email')  ?.value.trim() || '',
+        subject:$('#subject')?.value.trim() || '',
+        message:$('#message')?.value.trim() || ''
+      };
+
+      if (!validateForm(formData)) return;
+      await submitForm();
+    });
+
+    function validateForm({ name, email, subject, message }) {
+      let ok = true;
+      if (name.length < 2)                                  { showFormError('name',   'Please enter your full name.'); ok = false; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))      { showFormError('email',  'Please enter a valid email address.'); ok = false; }
+      if (subject.length < 3)                               { showFormError('subject','Please add a short subject.');   ok = false; }
+      if (message.length < 10)                              { showFormError('message','Please add a bit more detail.'); ok = false; }
+      return ok;
+    }
+
+    async function submitForm() {
+      state.formSubmitting = true;
+      setSubmitButtonState(true);
+      hideFormNote();
+
+      try {
+        const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (response.ok) {
+          showSuccess();
+          form.reset();
+          if (charCounter) charCounter.textContent = '0 / 2000 characters';
+        } else {
+          const data = await response.json().catch(() => ({}));
+          throw new Error(data.error || 'Submission failed. Please try again later.');
+        }
+      } catch (err) {
+        showFormNote(err.message || 'Something went wrong. Please use the Email id/ LinkedIn profile to contact.', 'error');
+      } finally {
+        state.formSubmitting = false;
+        setSubmitButtonState(false);
+      }
+    }
+
+    function setSubmitButtonState(isSubmitting) {
+      if (!submitBtn || !submitText || !btnLoader) return;
+      submitBtn.disabled = isSubmitting;
+      submitText.style.display = isSubmitting ? 'none' : 'inline';
+      btnLoader.style.display  = isSubmitting ? 'inline-flex' : 'none';
+    }
+
+    function showSuccess() { successMessage?.classList.add('visible'); }
+    function showFormError(field, msg) {
+      const el = $(`#${field}Error`);
+      if (el) { el.textContent = msg; el.classList.add('visible'); }
+    }
+    function clearFormErrors() { $$('.form-error').forEach(e => { e.textContent = ''; e.classList.remove('visible'); }); }
+    function showFormNote(message, type) {
+      if (!formNote) return;
+      formNote.textContent = message;
+      formNote.className = `form-note ${type}`;
+      formNote.style.display = 'block';
+    }
+    function hideFormNote() { if (formNote) formNote.style.display = 'none'; }
+  }
+})();
+</script>
+
+</body>
+</html>
