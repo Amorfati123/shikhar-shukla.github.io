@@ -1003,11 +1003,11 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             </div>
             <div class="stat-item">
               <div class="stat-number" data-count="20" data-suffix="+">0</div>
-              <div class="stat-label">Major Projects & Pipelines</div>
+              <div class="stat-label">Research Projects & Pipelines</div>
             </div>
             <div class="stat-item">
               <div class="stat-number" data-count="9">0</div>
-              <div class="stat-label">CDC Projects Delivered</div>
+              <div class="stat-label">CDC AI & Informatics Projects</div>
             </div>
             <div class="stat-item">
               <div class="stat-number" data-count="9" data-suffix="+">0</div>
@@ -1100,7 +1100,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
       <div class="card fade-in about-card">
         <div class="skill-category-icon" aria-hidden="true">🩺</div>
         <h3>Clinical & Public Health Insight</h3>
-        <p>Clinician-turned-data scientist with a decade of clinical experience, translating patient-level complexity into structured data problems. Skilled at interpreting biomedical, epidemiologic, and sensor-derived data through the lens of health outcomes and equity.</p>
+        <p>Clinician-turned-data scientist with a decade of clinical experience, translating patient-level complexity into structured data problems. Skilled in interpreting biomedical, epidemiologic, and physiologic data to inform outcome prediction and health equity research.</p>
       </div>
 
       <!-- Analytics & Modeling -->
@@ -1158,7 +1158,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             <div class="metric-item"><span class="metric-value">Versioned</span><div class="metric-label">Configs & audit</div></div>
           </div>
           <div class="tech-stack">
-            <span class="tech-tag">Python</span><span class="tech-tag">Palantir's Foundry/1CDP</span><span class="tech-tag">Pipeline Builder</span><span class="tech-tag">GPT-4</span>
+            <span class="tech-tag">Python</span><span class="tech-tag">Palantir's Foundry/1CDP</span><span class="tech-tag">Pipeline Builder</span><span class="tech-tag">GPT-4 APIs</span>
           </div>
         </div>
       </article>
@@ -1186,7 +1186,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             <span class="tech-tag">Python</span>
             <span class="tech-tag">Fuzzy Matching</span>
             <span class="tech-tag">String Distances</span>
-            <span class="tech-tag">Geocoding</span>
+            <span class="tech-tag">Geocoding APIs</span>
             <span class="tech-tag">Palantir's Foundry/1CDP</span>
           </div>
         </div>
@@ -1396,7 +1396,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             <span class="tech-tag">SSMS</span>
             <span class="tech-tag">ERD</span>
             <span class="tech-tag">Dynamic SQL</span>
-            <span class="tech-tag">Data Mapping</span>
+            <span class="tech-tag">Azure Data Studio</span>
           </div>
         </div>
       </article>
@@ -1404,14 +1404,14 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
       <!-- FORT — Fungal Outbreak Response Tracker (hidden by default) -->
       <article class="project-card fade-in project-hidden">
         <div class="project-header">
-          <span class="project-badge">Federal</span>
+          <span class="project-badge">CDC</span>
           <h3 class="project-title">FORT - Fungal Outbreak Response Tracker</h3>
           <div class="project-type">Product Analytics • UI/UX in Workshop</div>
         </div>
 
         <div class="project-content">
           <p class="project-description">
-            Transformed CDC’s internal outbreak tracker into a fast, analyst-friendly product in Palantir Foundry (1CDP). 
+            Co-developed and transformed CDC’s internal outbreak tracker into a fast, analyst-friendly product in Palantir Foundry (1CDP). 
             Fixed broken filtering, added inline response toggles for rapid status updates, enabled one-click PDF & large Excel exports, 
             and extended the ontology to include Donor-Derived Infections (DDI).
              <strong>Result: faster and easier outbreak tracking for epidemiologists, enabling CDC to respond to multi-state fungal outbreaks more quickly and on time.</strong>
@@ -1438,6 +1438,86 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             <span class="tech-tag">UX</span>
             <span class="tech-tag">Reporting</span>
             <span class="tech-tag">Agile</span>
+          </div>
+        </div>
+      </article>
+
+            <!-- Bridge2AI - Voice-Based Detection of Parkinson’s Disease (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">Research</span>
+          <h3 class="project-title">Bridge2AI - Voice-Based Detection of Parkinson’s Disease</h3>
+          <div class="project-type">Digital Biomarkers • Deep Learning on Audio Time-Series</div>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Developed and validated machine learning models for detecting Parkinson’s Disease from voice-derived Mel-Frequency Cepstral Coefficient (MFCC) time-series data using the NIH Bridge2AI Voice dataset. 
+            Designed a custom 1D ResNet architecture for temporal feature learning and compared its performance with traditional and transformer-based baselines. Manuscipt in progress.
+             <strong>Result: The ResNet-1D model achieved AUC > 0.80, demonstrating robust discrimination of Parkinson’s Disease from control participants using non-invasive voice biomarkers.</strong>
+          </p>
+
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item">
+              <span class="metric-value">442</span>
+              <div class="metric-label">Voice participants</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">AUC > 0.80</span>
+              <div class="metric-label">Detection accuracy</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">MFCC</span>
+              <div class="metric-label">Voice biomarker features</div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">ResNet-1D</span>
+            <span class="tech-tag">PatchTST</span>
+            <span class="tech-tag">MFCCs</span>
+          </div>
+        </div>
+      </article>
+
+                  <!-- Predicting Postoperative Delirium (hidden by default) -->
+      <article class="project-card fade-in project-hidden">
+        <div class="project-header">
+          <span class="project-badge">Research</span>
+          <h3 class="project-title">Multi-Domain ML Framework for Predicting Postoperative Delirium</h3>
+          <div class="project-type">Clinical Prediction • Perioperative Machine Learning</div>
+        </div>
+
+        <div class="project-content">
+          <p class="project-description">
+            Developed a reproducible ML framework to predict postoperative delirium using perioperative EHR data, integrating intraoperative Mean Arterial Pressure (MAP) dynamics, frailty indicators, anesthesia exposures, surgical domain, and comorbidities. 
+            Implemented domain-specific models combined through a calibrated ensemble super-learner to balance performance and interpretability.
+             <strong>Result: Achieved ROC-AUC > 0.85 with well-calibrated predictions and clinically coherent feature effects, supporting explainable and domain-aware AI for perioperative cognitive risk assessment.</strong>
+          </p>
+
+          <div class="project-metrics" aria-label="Key results">
+            <div class="metric-item">
+              <span class="metric-value">ROC-AUC > 0.85</span>
+              <div class="metric-label">Cross-validated performance</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">5</span>
+              <div class="metric-label">Clinical feature domains</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">SHAP</span>
+              <div class="metric-label">Model interpretability</div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">LightGBM</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">SHAP</span>
+            <span class="tech-tag">Bayesian hyperparameter tuning</span>
           </div>
         </div>
       </article>
