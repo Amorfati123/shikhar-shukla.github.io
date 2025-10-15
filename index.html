@@ -1150,8 +1150,10 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
         <div class="project-content">
           <p class="project-description"> I architected the core ingestion flow for CDC’s fungal disease surveillance (FungiSurv) to handle diverse state CSV/Excel formats.
       The system validates uploads, uses GPT-4 to propose column-to-standard mappings, lets epidemiologists review/approve edits,
-      then standardizes and integrates data with full versioning and audit logs. Outcome: less manual mapping, faster partner onboarding,
-      and higher-quality, reproducible surveillance datasets.</p>
+      then standardizes and integrates data with full versioning and audit logs. 
+            <strong>Outcome: less manual mapping, faster partner onboarding,
+      and higher-quality, reproducible surveillance datasets.</strong>
+          </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">Semi-Auto</span><div class="metric-label">Upload→Integrate</div></div>
             <div class="metric-item"><span class="metric-value">GPT-4</span><div class="metric-label">Mapping suggestion</div></div>
@@ -1175,7 +1177,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           <p class="project-description">
             Developed a semi-automated pipeline to standardize and match healthcare facilities across state surveillance data. 
             Combined proportional/partial/fixed string distance metrics with CMS and NPI identifiers, then applied geocoding to resolve ambiguous matches. 
-            Outcome: higher-confidence matches, reduced manual review, and more precise spatial data for antimicrobial resistance risk analysis.
+            <strong>Outcome: higher-confidence matches, reduced manual review, and more precise spatial data for antimicrobial resistance risk analysis.</strong>
           </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">Top-5</span><div class="metric-label">Candidate matches</div></div>
@@ -1221,7 +1223,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             Built an end-to-end AI assistant within LibreHealth’s open-source Radiology Information System (RIS), integrating directly with the OHIF viewer. 
             Enabled radiologists to train, retrain, and apply models in workflow using DICOM-SR overlays, active learning (few-shot retraining on feedback), 
             and swarm learning to share model weights across users. Demonstrated with CheXNet on chest X-rays and presented at AIME 2023 (NSF-supported). 
-            Outcome: proof of concept for scalable, standards-based AI embedded in radiology workflows.
+            <strong>Outcome: proof of concept for scalable, standards-based AI embedded in radiology workflows.</strong>
           </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">DICOM-SR</span><div class="metric-label">Standards overlays</div></div>
@@ -1268,7 +1270,8 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             Built a reproducible pipeline to impute, interpolate, and forecast chronic wound healing trajectories across 
             14,571 wounds from 6,171 patients. Used XGBoost for demographic imputation, AIC-driven selection across interpolation 
             methods (Linear, Krogh, Akima, RBF), and forecasting with Holt-Winters, ARIMA, Prophet, and deep models (LSTM, BiLSTM). 
-            Integrated subgroup fairness checks by gender, race, and ethnicity. Published in IEEE CBMS 2024.
+            Integrated subgroup fairness checks by gender, race, and ethnicity.
+            <strong>Outcome: Published as second-author IEEE CBMS 2024 paper; demonstrated interpretable, equitable wound outcome forecasting.</strong>
           </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">14,571</span><div class="metric-label">Wounds analyzed</div></div>
@@ -1354,7 +1357,8 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           <p class="project-description">
             Led analysis of 42 intraoperative MAP (Mean Arterial Pressure) features from 10 years of EHR data in noncardiac surgeries. 
             Identified dynamic blood pressure variability markers-percent shifts, prolonged hypotension, frequent changepoints, and entropy measures-
-            as strong predictors of 30-day mortality, beyond conventional threshold methods. Presented at AMIA 2024.
+            as strong predictors of 30-day mortality, beyond conventional threshold methods.
+            <strong>Outcome: Identified 20 high-value intraoperative hemodynamic predictors of mortality risk; presented at AMIA 2024 Annual Symposium.</strong>
           </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">42</span><div class="metric-label">TS features</div></div>
@@ -1385,6 +1389,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             Built a full ERD across 200+ SQL tables and a dynamic SQL scanner to locate target values across free-text columns.
             Mapped recovered elements to US state's case IDs and NNDSS identifiers, establishing a validated pathway to enrich
             <em>Candida auris</em> surveillance without waiting for upstream schema changes.
+            <strong>Outcome: Established validated linkage pathways between state case IDs and national identifiers, enabling more complete surveillance reporting.</strong>
           </p>
           <div class="project-metrics" aria-label="Key results">
             <div class="metric-item"><span class="metric-value">200+</span><div class="metric-label">ODSE tables profiled</div></div>
@@ -1414,7 +1419,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             Co-developed and transformed CDC’s internal outbreak tracker into a fast, analyst-friendly product in Palantir Foundry (1CDP). 
             Fixed broken filtering, added inline response toggles for rapid status updates, enabled one-click PDF & large Excel exports, 
             and extended the ontology to include Donor-Derived Infections (DDI).
-             <strong>Result: faster and easier outbreak tracking for epidemiologists, enabling CDC to respond to multi-state fungal outbreaks more quickly and on time.</strong>
+             <strong>Outcome: faster and easier outbreak tracking for epidemiologists, enabling CDC to respond to multi-state fungal outbreaks more quickly and on time.</strong>
           </p>
 
           <div class="project-metrics" aria-label="Key results">
@@ -1454,7 +1459,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           <p class="project-description">
             Developed and validated machine learning models for detecting Parkinson’s Disease from voice-derived Mel-Frequency Cepstral Coefficient (MFCC) time-series data using the NIH Bridge2AI Voice dataset. 
             Designed a custom 1D ResNet architecture for temporal feature learning and compared its performance with traditional and transformer-based baselines. Manuscipt in progress.
-             <strong>Result: The ResNet-1D model achieved AUC > 0.80, demonstrating robust discrimination of Parkinson’s Disease from control participants using non-invasive voice biomarkers.</strong>
+             <strong>Outcome: The ResNet-1D model achieved AUC > 0.80, demonstrating robust discrimination of Parkinson’s Disease from control participants using non-invasive voice biomarkers.</strong>
           </p>
 
           <div class="project-metrics" aria-label="Key results">
@@ -1494,7 +1499,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           <p class="project-description">
             Developed a reproducible ML framework to predict postoperative delirium using perioperative EHR data, integrating intraoperative Mean Arterial Pressure (MAP) dynamics, frailty indicators, anesthesia exposures, surgical domain, and comorbidities. 
             Implemented domain-specific models combined through a calibrated ensemble super-learner to balance performance and interpretability.
-             <strong>Result: Achieved ROC-AUC > 0.85 with well-calibrated predictions and clinically coherent feature effects, supporting explainable and domain-aware AI for perioperative cognitive risk assessment.</strong>
+             <strong>Outcome: Achieved ROC-AUC > 0.85 with well-calibrated predictions and clinically coherent feature effects, supporting explainable and domain-aware AI for perioperative cognitive risk assessment.</strong>
           </p>
 
           <div class="project-metrics" aria-label="Key results">
@@ -1538,6 +1543,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             determinants of caries, periodontal disease, and treatment outcomes. 
             Designed reproducible R pipelines with validated outputs, enabling evidence-based preventive strategies 
             and community outreach for underserved populations.
+            <strong>Outcome: Early integration of clinical practice and data science; informed evidence-based outreach strategies for underserved populations.</strong>
           </p>
 
           <div class="project-metrics" aria-label="Key results">
@@ -1651,9 +1657,6 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
                     <li><strong>Substance Use Risk Prediction:</strong> Integrated six years of NSDUH data, applied statistical tests and ML (CatBoost, Random Forest), and identified demographic/behavioral predictors to inform prevention strategies.</li>
                     <li><strong>Hospital Length of Stay Modeling:</strong> Built predictive models (GLM, Random Forest, XGBoost) on hospitalization data; identified admission type, insurance, and demographics as key LOS drivers.</li>
                     <li><strong>SecureData Shield 2.0:</strong> Designed a multi-layer IoT encryption framework combining AES-256, Blockchain, and deep learning for scalable and secure transmission of health device data.</li>
-                    <li><strong>Lab Research – Radiology AI:</strong> Integrated AI into LibreHealth RIS with OHIF viewer, enabling in-workflow retraining and swarm learning; results presented at AIME 2023 (NSF-supported).</li>
-                    <li><strong>Lab Research – Wound Forecasting:</strong> Developed interpolation + forecasting pipelines (ARIMA, Prophet, LSTM/BiLSTM) for 14,500 chronic wounds; published IEEE CBMS 2024 paper.</li>
-                    <li><strong>Lab Research – DHIS2+OpenCPU:</strong> Engineered a novel in-platform statistical tool for DHIS2 with secure R execution; abstract accepted at DHIS2 Annual Conference 2024.</li>
                   </ul>
                   <p><strong>Coursework:</strong> Clinical Decision Support Systems, Applied Statistical Methods, Health Informatics Standards, Clinical Information Systems, Project Management, Machine Learning in Bioinformatics, Health Information Exchange.</p>
                   <div class="journey-achievements">
@@ -1743,7 +1746,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
             </div>
             <div class="journey-card-content">
               <p class="journey-summary">
-                Contributing to NIH-funded multimodal health data science initiatives, developing reproducible pipelines and benchmarking workflows for sepsis prediction, clinical time-series forecasting, and speech-based disease detection — advancing biomedical informatics through applied AI methods.
+                Contributing to NIH-funded multimodal health data science initiatives, developing reproducible pipelines and benchmarking workflows for sepsis prediction, clinical time-series forecasting, and speech-based disease detection - advancing biomedical informatics through applied AI methods.
               </p>
               <button class="read-more-btn-modern" data-target="journey-1">
                 <span>Read More</span>
@@ -1756,8 +1759,8 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
                   <ul class="details-list">
                     <ul class="details-list">
                       <li><strong>Sepsis Forecasting:</strong> Designed and validated pipelines on the MIMIC-IV ICU dataset (>70,000 admissions), benchmarking traditional forecasting methods against deep learning architectures, delivering clinically interpretable and reliable models for early sepsis detection.</li>
-                      <li><strong>Speech-Based Biomarkers:</strong> Built reproducible workflows on the NIH Bridge2AI Voice dataset, applying LSTMs and Transformer models to MFCC time-series for Parkinson’s detection; established a scalable benchmarking framework for future speech-driven disease studies.</li>
-                      <li><strong>Postoperative Delirium Study:</strong> Developed recall-optimized predictive models using >70M anesthesia records, engineering novel hemodynamic and anesthetic exposure features to support early delirium risk identification and clinical decision support.</li>
+                      <li><strong>Voice-Based Parkinson’s Detection Study - NIH Bridge2AI:</strong> Built reproducible pipelines to evaluate voice-derived digital biomarkers for Parkinson’s Disease using the NIH Bridge2AI Voice dataset (442 participants). Preprocessed Mel-Frequency Cepstral Coefficient (MFCC) time-series and developed a residual convolutional model (ResNet-1D) that achieved high discrimination and robust recall, demonstrating the feasibility of non-invasive, voice-based disease phenotyping.</li>
+                      <li><strong>Postoperative Delirium Prediction Study - Dept. of Anesthesiology & Critical Care Medicine:</strong> Developed a reproducible, multi-domain ML framework for predicting postoperative delirium using >70M perioperative EHR records, modeling intraoperative MAP dynamics, frailty, anesthesia exposure, and surgical context. The stacked LightGBM-XGBoost-logistic ensemble achieved ROC-AUC > 0.85 with strong calibration and SHAP-based interpretability, aligning model structure with clinical reasoning.</li>
                       <li><strong>Training & Equity:</strong> Created applied datathon assets for HBCUs/MSIs, embedding fairness and bias-check methods into time-series pipelines to promote equitable AI adoption in clinical and public health research.</li>
                     </ul>
                   <div class="journey-achievements">
@@ -1789,9 +1792,9 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
               <div class="journey-details-modern" id="journey-2">
                 <div class="details-content">
                   <ul class="details-list">
-                    <li><strong>FungiSurv Infrastructure:</strong> Built AI-assisted ingestion→validation→integration pipelines in Palantir Foundry. Embedded GPT-4 schema mapping, Python/JSON transforms, and version control - cutting manual effort by ~60% and onboarding states faster with reproducible, auditable datasets.</li>
-                    <li><strong>Facility Matching & Geocoding:</strong> Developed semi-automated facility linkage with SQL string-distance methods and CMS/NPI registries, combined with geocoding. Delivered higher-confidence matches and spatial precision for antimicrobial resistance surveillance.</li>
-                    <li><strong>NNDSS ODSE Mining:</strong> Engineered dynamic SQL search across >200 relational tables to recover missing Candida auris case elements and align outputs with HL7 v2. Improved completeness, interoperability, and readiness for modernized reporting.</li>
+                    <li><strong>FungiSurv Infrastructure:</strong> Designed and deployed AI-assisted ingestion and schema-mapping pipelines in Palantir Foundry, integrating GPT-4 based column alignment, JSON transformations, and version-controlled ingestion. Reduced manual data harmonization by ~60% and improved timeliness of multistate fungal surveillance.</li>
+                    <li><strong>Facility Matching & Geocoding:</strong> Built semi-automated facility linkage pipelines using SQL string-distance methods, CMS/NPI registries, and geocoding to enhance entity resolution and spatial accuracy for antimicrobial resistance tracking.</li>
+                    <li><strong>NNDSS ODSE Mining:</strong> Engineered dynamic SQL workflows across >200 relational tables to recover and map Candida auris elements missing from upstream schemas, improving completeness and HL7 v2 interoperability for national case reporting.</li>
                     <li><strong>FORT Outbreak Tracker:</strong> Enhanced CDC’s outbreak dashboard with filters, exports (CSV/Excel/PDF), and new Donor-Derived Infection entities. Gave epidemiologists faster, easier access to 200k+ outbreak records - enabling quicker nationwide response.</li>
                     <li><strong>DAART JSON Workflow:</strong> Replaced contractor-built logic with an in-house Python pipeline that flattens, cleans, pivots, and auto-publishes JSON data for Data for Action on Antimicrobial Resistance Threats (DAART). Fully automated scheduling triggers, QA-ready datasets, and scalable workflows for future production migration.</li>
                     <li><strong>Daily Data Stewardship:</strong> Served as primary data steward monitoring 1CDP pipelines for build, schedule, and data-health failures. Diagnosed root causes, deployed Python/R fixes, and implemented proactive validation checks - ensuring continuity, preventing downtime, and preserving data trustworthiness.</li>
@@ -1818,7 +1821,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           <div class="journey-dot-dual" aria-hidden="true"></div>
           <div class="journey-card-modern">
             <div class="journey-card-header">
-              <h4 class="journey-title-modern">Research Assistant, Dept. of Anesthesiology</h4>
+              <h4 class="journey-title-modern">Junior Data Scientist, Dept. of Anesthesiology</h4>
               <div class="journey-meta"><span class="journey-institution">Indiana University School of Medicine</span><span class="journey-period-modern">Jan 2024 - May 2024</span></div>
             </div>
             <div class="journey-card-content">
@@ -1882,21 +1885,21 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">SQL</span> <span class="skill-name-sub">(T-SQL, PostgreSQL, Snowflake)</span></span>
+              <span class="skill-name"><span class="skill-name-main">SQL</span> <span class="skill-name-sub">(T-SQL, PostgreSQL, Snowflake, dynamic SQL)</span></span>
               <span class="skill-percentage">92%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:92%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Data Pipelines & APIs</span> <span class="skill-name-sub">(ETL/ELT, REST, JSON, Foundry Pipeline Builder)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Data Pipelines & APIs</span> <span class="skill-name-sub">(ETL/ELT, REST, JSON, Foundry Pipeline Builder, FHIR APIs)</span></span>
               <span class="skill-percentage">90%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Data Ops & Versioning</span> <span class="skill-name-sub">(lineage, QA, scheduling, reproducibility)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Data Ops & Versioning</span> <span class="skill-name-sub">(lineage, QA, CI/CD, automated testing, reproducibility)</span></span>
               <span class="skill-percentage">87%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:87%"></div></div>
@@ -1912,35 +1915,35 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Classical Statistics</span> <span class="skill-name-sub">(parametric/non-parametric, ANOVA, χ², t-tests, regression)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Classical Statistics</span> <span class="skill-name-sub">(parametric/non-parametric, ANOVA, χ², regression, mixed models)</span></span>
               <span class="skill-percentage">91%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:91%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Predictive Modeling</span> <span class="skill-name-sub">(Logit, RF, XGBoost, CatBoost, L1/L2 regularization)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Predictive Modeling</span> <span class="skill-name-sub">(Logit, RF, XGBoost, CatBoost, LightGBM, ensemble stacking, causal inference)</span></span>
               <span class="skill-percentage">93%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:93%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Time-Series & Physiologic Signals</span> <span class="skill-name-sub">(ARIMA, Prophet, LSTM, TFT, Poincaré, entropy)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Time-Series & Physiologic Signals</span> <span class="skill-name-sub">(ARIMA, Prophet, LSTM, TFT, PELT changepoints, entropy, Poincaré)</span></span>
               <span class="skill-percentage">90%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:90%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Biostatistics</span> <span class="skill-name-sub">(survival, calibration, PELT changepoints, mixed models)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Biostatistics</span> <span class="skill-name-sub">(survival analysis, calibration, Bayesian modeling, multivariable inference)</span></span>
               <span class="skill-percentage">88%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Explainability & Model Evaluation</span> <span class="skill-name-sub">(SHAP, permutation, bias/fairness metrics)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Explainability & Model Evaluation</span> <span class="skill-name-sub">(SHAP, permutation, subgroup bias/fairness, calibration curves)</span></span>
               <span class="skill-percentage">84%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:84%"></div></div>
@@ -1977,7 +1980,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Data Governance & Quality</span> <span class="skill-name-sub">(auditability, provenance, reproducibility)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Data Governance & Quality</span> <span class="skill-name-sub">(auditability, lineage, de-identification, FAIR data principles)</span></span>
               <span class="skill-percentage">88%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:88%"></div></div>
@@ -1993,7 +1996,7 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Medical Imaging</span> <span class="skill-name-sub">(DICOM, OHIF, DICOM-SR, segmentation)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Medical Imaging</span> <span class="skill-name-sub">(DICOM, OHIF, DICOM-SR, segmentation, U-Net, CNNs)</span></span>
               <span class="skill-percentage">82%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:82%"></div></div>
@@ -2007,14 +2010,14 @@ footer p:last-child{font-size:var(--font-size-sm);opacity:.85;line-height:1.4}
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Speech & Voice Analysis</span> <span class="skill-name-sub">(MFCCs, LSTM, Transformers)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Speech & Voice Analysis</span> <span class="skill-name-sub">(MFCCs, LSTM, ResNet-1D, Transformer architectures)</span></span>
               <span class="skill-percentage">82%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:82%"></div></div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
-              <span class="skill-name"><span class="skill-name-main">Natural Language Processing</span> <span class="skill-name-sub">(clinical text, embeddings, topic models)</span></span>
+              <span class="skill-name"><span class="skill-name-main">Natural Language Processing</span> <span class="skill-name-sub">(clinical text, embeddings, topic models, transformers)</span></span>
               <span class="skill-percentage">80%</span>
             </div>
             <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:80%"></div></div>
